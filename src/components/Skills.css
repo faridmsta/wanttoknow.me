@@ -1,0 +1,35 @@
+.skills {
+
+    background: var(--mainBlack);
+    padding: 50px 0;
+
+    & .skillsWrap {
+
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        & .logoWrap {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 350px;
+            height: 350px;
+            
+           
+            & img {
+                transition: .3s;
+                height: 100%;
+                object-fit: contain;
+                width: 100%;
+
+            }
+        }
+
+
+
+    }
+}

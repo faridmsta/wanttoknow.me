@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#root{
+    overflow-x: hidden;
+}
+body{
+    cursor:none;
+}
+a{
+    cursor: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+:root{
+    --mainBlack:#2B2D3A;
+    --mainLgBlack:#363543;
+    --fakeWhite:#FCFBFF;
+    --orange:#FDBB18;
+    --purple:#8075FF;
+}
+
