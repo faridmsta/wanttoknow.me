@@ -5,9 +5,33 @@ import '../components/Header.css'
 import Click from '../components/sound/click.mp3'
 function Header() {
     const [menu, setMenu] = useState(false)
-    function clicksound() {
-        new Audio(Click).play();
-      }
+    const hammenu = document.querySelector(`.hamburgerMenu`)
+    const [menuclass, setMenuclass] = useState('')
+    function classreturn(cls) {
+        if (!menu) setMenuclass(cls)
+        else setMenuclass('')
+    }
+    function animationMenu(bool) {
+        if (!bool) {
+            document.body.style.overflowY = 'hidden'
+            classreturn('menuOpened1')
+            setTimeout(() => {
+                classreturn('menuOpened')
+            }, 200)
+
+        }
+        else {
+            document.body.style.overflowY = 'unset'
+            classreturn('menuOpened1')
+            setTimeout(() => {
+                classreturn('menuOpened')
+            }, 200)
+        }
+
+    }
+
+
+
     return (
         <div>
             <header>
@@ -20,13 +44,13 @@ function Header() {
                         </div>
                         <nav>
                             <ul>
-                                <li onClick={clicksound}><NavLink to="#">About</NavLink></li>
-                                <li onClick={clicksound}><NavLink to="#">Education</NavLink></li>
-                                <li onClick={clicksound}><NavLink to="/skills">Skills</NavLink></li>
-                                <li onClick={clicksound}><NavLink to="/contact">Contact</NavLink></li>
+                                <li><NavLink to="#">About</NavLink></li>
+                                <li><NavLink to="#">Education</NavLink></li>
+                                <li><NavLink to="/skills">Skills</NavLink></li>
+                                <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
                         </nav>
-                        <div onClick={() => { setMenu(!menu) }} className={`hamburgerMenu ${menu && `menuOpened`} `}>
+                        <div onClick={() => { setMenu(!menu), animationMenu(menu) }} className={`hamburgerMenu ${menuclass} `}>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -35,10 +59,10 @@ function Header() {
                 </div>
                 <nav className={`togglenav ${menu && `openTogglenav`}`}>
                     <ul>
-                        <li onClick={clicksound} ><NavLink to="#">About</NavLink></li>
-                        <li onClick={clicksound} ><NavLink to="#">Education</NavLink></li>
-                        <li onClick={clicksound} ><NavLink to="#">Skills</NavLink></li>
-                        <li onClick={clicksound} ><NavLink to="#">Contact</NavLink></li>
+                        <li><NavLink to="#">About</NavLink></li>
+                        <li><NavLink to="#">Education</NavLink></li>
+                        <li><NavLink to="#">Skills</NavLink></li>
+                        <li><NavLink to="#">Contact</NavLink></li>
                     </ul>
                 </nav>
             </header>
