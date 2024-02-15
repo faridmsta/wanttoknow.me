@@ -1,5 +1,5 @@
 import React from 'react'
-import './Permision.css'
+import '../components/Permision.css'
 import { NavLink } from 'react-router-dom'
 
 function Permision() {

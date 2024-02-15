@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from './img/Logo.png'
-import './Header.css'
-import Click from './sound/click.mp3'
+import Logo from '../components/img/Logo.png'
+import '../components/Header.css'
+import Click from '../components/sound/click.mp3'
 function Header() {
     const [menu, setMenu] = useState(false)
     function clicksound() {
