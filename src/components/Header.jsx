@@ -7,6 +7,7 @@ function Header() {
     const [menu, setMenu] = useState(false)
     const hammenu = document.querySelector(`.hamburgerMenu`)
     const [menuclass, setMenuclass] = useState('')
+    const [menuclass2, setMenuclass2] = useState('')
     function classreturn(cls) {
         if (!menu) setMenuclass(cls)
         else setMenuclass('')
@@ -22,9 +23,10 @@ function Header() {
         }
         else {
             document.body.style.overflowY = 'unset'
-            classreturn('menuOpened1')
+            setMenuclass2('menuOpened1')
+            classreturn('menuOpened')
             setTimeout(() => {
-                classreturn('menuOpened')
+                setMenuclass2('')
             }, 200)
         }
 
@@ -50,7 +52,7 @@ function Header() {
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
                         </nav>
-                        <div onClick={() => { setMenu(!menu), animationMenu(menu) }} className={`hamburgerMenu ${menuclass} `}>
+                        <div onClick={() => { setMenu(!menu), animationMenu(menu) }} className={`hamburgerMenu ${menuclass} ${menuclass2} `}>
                             <span></span>
                             <span></span>
                             <span></span>
