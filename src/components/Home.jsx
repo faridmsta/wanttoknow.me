@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Meg from '../components/img/megradient.png'
 import Alplogo from '../components/img/alplogo.jpg'
-import Brainring from '../components/img/brainring.jpg'
+import Brain from '../components/img/brain.jpg';
 import Python from '../components/img/python.png'
 import Technest from '../components/img/Technest.jpg'
 import Uni from '../components/img/uni.jpg'
@@ -89,7 +89,7 @@ function Home() {
 
               <div className="stPart " data-aos="fade-left">
                 <div className="image">
-                  <img src={Brainring} alt="" />
+                  <img src={Brain} alt="" />
                 </div>
                 <div className="stContent">
                   <h2>Brain Ring competition | 2022</h2>
