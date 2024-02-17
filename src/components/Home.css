@@ -36,6 +36,9 @@
                     & >p {
                         font-size: clamp(16px,4vw, 24px);
                     }
+                    & span{
+                        color: var(--orange);
+                    }
                 }
             }
             & .whyMe {
@@ -296,7 +299,7 @@
 
             & .image {
                 
-                width: 600px;
+                width: 40%;
                 height: 350px;
                 overflow: hidden;
                 display: flex;

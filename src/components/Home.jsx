@@ -14,6 +14,46 @@ import { Link } from 'react-router-dom'
 import Click from '../components/sound/click.mp3'
 
 function Home() {
+  const [ageDetails, setAgeDetails] = useState(null);
+
+  useEffect(() => {
+    const calculateAgeDetails = () => {
+      // Birthday in the format: 'YYYY-MM-DDTHH:mm:ss'
+      const birthday = new Date('2006-06-10T07:00:00');
+      const currentDate = new Date();
+
+      // Calculate age details
+      const timeDifference = currentDate - birthday;
+      const ageInMilliseconds = new Date(timeDifference);
+
+      const years = ageInMilliseconds.getUTCFullYear() - 1970;
+      const months = ageInMilliseconds.getUTCMonth();
+      const days = ageInMilliseconds.getUTCDate() - 1;
+      const hours = ageInMilliseconds.getUTCHours();
+      const minutes = ageInMilliseconds.getUTCMinutes();
+      const seconds = ageInMilliseconds.getUTCSeconds();
+
+      setAgeDetails({
+        years,
+        months,
+        days,
+        hours,
+        minutes,
+        seconds,
+      });
+    };
+
+    // Calculate initially
+    calculateAgeDetails();
+
+    // Update every second
+    const intervalId = setInterval(() => {
+      calculateAgeDetails();
+    }, 1000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
 
 
   useEffect(() => {
@@ -23,7 +63,7 @@ function Home() {
   function clicksound() {
     new Audio(Click).play();
   }
-  
+
 
 
 
@@ -49,7 +89,17 @@ function Home() {
                 </div>
                 <span></span>
                 <div className="myText">
-                  <p>I am a Computer Engineering student at Azerbaijan Technical University. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, laboriosam.
+                  <p>I am a Computer Engineering student at Azerbaijan Technical University.
+                    I'm already
+                    <div className="age">
+                      <span> {ageDetails?.years} years </span>/
+                      <span> {ageDetails?.months} months </span>/
+                      <span> {ageDetails?.days} days </span>/
+                      <span> {ageDetails?.hours} hours </span>/
+                      <span> {ageDetails?.minutes} minustes </span>/
+                      <span> {ageDetails?.seconds} seconds </span>old.
+                    </div>
+
                   </p>
                 </div>
               </div>
