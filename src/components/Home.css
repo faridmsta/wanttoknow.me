@@ -36,9 +36,7 @@
                     & >p {
                         font-size: clamp(16px,4vw, 24px);
                     }
-                    & span{
-                        color: var(--orange);
-                    }
+                   
                 }
             }
             & .whyMe {
@@ -91,20 +89,8 @@
 
 @media screen and (max-width:1100px) {
     .intro {
-
         & .introWrap {
 
-
-            & .videoWrap {
-
-
-                & video {
-
-
-                    & source {}
-                }
-
-            }
 
             & .mainContent {
                 flex-direction: column;
@@ -114,22 +100,14 @@
                     padding: 30px 0 0;
                     width: 100%;
 
-                    & .name {
-                        & p {}
-
-                        &>h1 {}
-                    }
-
-                    & .myText {
-                        & p {}
-                    }
+                
                 }
 
 
                 & .photoOfMe {
                     order: 3;
 
-                    & img {}
+                 
 
                 }
 
@@ -155,50 +133,16 @@
 
         & .introWrap {
 
-
-            & .videoWrap {
-
-
-                & video {
-
-
-                    & source {}
-                }
-
-            }
-
             & .mainContent {
-
-
-
-                & .littleAbout {
-
-
-                    & .name {
-                        & p {}
-
-                        &>h1 {}
-                    }
-
-                    & .myText {
-                        & p {}
-                    }
-                }
-
-
                 & .whyMe {
                     padding: 20px 0 0;
                     display: flex;
                     justify-content: flex-start;
                     width: 100%;
 
-                    & p {}
                 }
 
-                & .photoOfMe {
 
-                    & img {}
-                }
             }
 
         }
@@ -207,52 +151,21 @@
 }
 @media screen and (max-width:425px) {
     .intro {
-
         & .introWrap {
 
-
-            & .videoWrap {
-
-
-                & video {
-
-
-                    & source {}
-                }
-
-            }
-
             & .mainContent {
-
-
-
-                & .littleAbout {
-
-
-                    & .name {
-                        & p {}
-
-                        &>h1 {}
-                    }
-
-                    & .myText {
-                        & p {}
-                    }
-                }
-
-
                 & .whyMe {
                     padding: 20px 0 0;
                     display: flex;
                     justify-content: flex-start;
                     width: 100%;
 
-                    & p {}
+                   
                 }
 
                 & .photoOfMe {
                     min-width: 100%;
-                    & img {}
+                    
                 }
             }
 
@@ -262,5 +175,5 @@
 }
 
 
-/* path */
+/* Social media */
 
