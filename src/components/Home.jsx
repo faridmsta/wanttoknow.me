@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Spline from '@splinetool/react-spline';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import '../components/Home.css'
@@ -7,7 +8,6 @@ import Meg from '../components/img/megradient.png'
 import Click from '../components/sound/click.mp3'
 
 function Home() {
-  const [ageDetails, setAgeDetails] = useState(null);
 
   useEffect(() => {
     Aos.init();
@@ -16,10 +16,6 @@ function Home() {
   function clicksound() {
     new Audio(Click).play();
   }
-
-
-
-
 
   setTimeout(() => {
     document.querySelector('.mainContent').style.opacity = "1"
@@ -55,12 +51,31 @@ function Home() {
                   <br />
                   it's who I am! Let's create quality
                 </p>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
       </section>
-      
+      <section className="social">
+
+        <div className="socialWrap">
+          <div className="d3dSocialM">
+            <Spline
+              style={{
+                width: ' 100%',
+                height: '100vh'
+              }}
+              scene="https://prod.spline.design/4SpYPPL10nVCERQ8/scene.splinecode"
+            />
+
+            {/* <Spline
+              scene="https://prod.spline.design/U5sCJH5Q8vbAcyi5/scene.splinecode"
+
+            /> */}
+          </div>
+
+        </div>
+      </section>
     </main>
 
   )
