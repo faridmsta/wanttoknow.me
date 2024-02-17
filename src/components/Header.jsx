@@ -46,7 +46,7 @@ function Header() {
                         <nav>
                             <ul>
                                 <li><NavLink to="#">About</NavLink></li>
-                                <li><NavLink to="#">Career path</NavLink></li>
+                                <li><NavLink to="/career">Career path</NavLink></li>
                                 <li><NavLink to="/skills">Skills</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
@@ -61,9 +61,9 @@ function Header() {
                 <nav className={`togglenav ${menu && `openTogglenav`}`}>
                     <ul>
                         <li><NavLink to="#">About</NavLink></li>
-                        <li><NavLink to="#">Career path</NavLink></li>
-                        <li><NavLink to="#">Skills</NavLink></li>
-                        <li><NavLink to="#">Contact</NavLink></li>
+                        <li><NavLink to="/career">Career path</NavLink></li>
+                        <li><NavLink to="/skills">Skills</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
             </header>

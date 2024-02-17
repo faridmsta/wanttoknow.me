@@ -6,6 +6,7 @@ import Permision from './components/Permision';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import Path from './components/Path';
 function App() {
   const location = useLocation();
   const [permision, setPermision] = useState(true);
@@ -38,6 +39,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/career" element={<Path />} />
       </Routes>
     </>
   );
