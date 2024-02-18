@@ -1,12 +1,10 @@
-
-
 .intro {
     background-color: var(--mainBlack);
     width: 100%;
     position: relative;
 
     & .introWrap {
-        
+
         & .mainContent {
             transition: 2s;
             color: white;
@@ -27,21 +25,22 @@
 
                     &>h1 {
 
-                        font-size: clamp(48px, 5vw, 100px); 
+                        font-size: clamp(48px, 5vw, 100px);
                     }
-                    
+
                 }
 
                 & .myText {
-                    & >p {
-                        font-size: clamp(16px,4vw, 24px);
+                    &>p {
+                        font-size: clamp(16px, 4vw, 24px);
                     }
-                   
+
                 }
             }
+
             & .whyMe {
-                & >p {
-                    font-size: clamp(12px,4vw, 22px);
+                &>p {
+                    font-size: clamp(12px, 4vw, 22px);
                 }
             }
 
@@ -100,19 +99,19 @@
                     padding: 30px 0 0;
                     width: 100%;
 
-                
+
                 }
 
 
                 & .photoOfMe {
                     order: 3;
 
-                 
+
 
                 }
 
                 & .whyMe {
-                    padding: 30px 0 0 ;
+                    padding: 30px 0 0;
                     order: 2;
                     width: 100%;
 
@@ -149,6 +148,7 @@
 
     }
 }
+
 @media screen and (max-width:425px) {
     .intro {
         & .introWrap {
@@ -160,12 +160,12 @@
                     justify-content: flex-start;
                     width: 100%;
 
-                   
+
                 }
 
                 & .photoOfMe {
                     min-width: 100%;
-                    
+
                 }
             }
 
@@ -177,15 +177,245 @@
 
 /* Social media */
 
-.social{
+.social {
     background: var(--mainLgBlack);
-    & .socialWrap{
-        & .d3dSocialM{
-            width: 100%;
-            & canvas{
-                width: 100%;
-                height: 100vh;
+    padding: 30px 0;
+    font-family: "Rubik", sans-serif;
+
+    & .socialWrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        & .head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: normal;
+
+            & h2 {
+                padding: 12px 0;
+                color: var(--orange);
+                font-size: 36px;
+                font-family: "Rubik", sans-serif;
+            }
+
+            & p {
+                color: var(--fakeWhite);
+                font-family: "Rubik", sans-serif;
+                font-size: 16px;
             }
         }
+
+        & .socialM {
+            height: 50vh;
+            box-sizing: border-box;
+
+            & .round {
+                margin: 50px 0 0;
+                position: relative;
+                right: 50%;
+                width: 500px;
+                height: 500px;
+                background-color: var(--mainBlack);
+                border-radius: 39% 61% 63% 37% / 42% 49% 51% 58%;
+
+                & .icon {
+                    transition: all 0.3s;
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    gap: 20px;
+
+                    & svg {
+                        font-size: 48px;
+                        color: white;
+                        transition: transform 0.3s;
+                    }
+
+                    & .ltoR {
+                        overflow: hidden;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 40px;
+
+                        width: 0px;
+                        background-color: var(--purple);
+                        color: var(--fakeWhite);
+                        transition: width 0.3s, padding 0.3s;
+                        border-right: 5px solid var(--orange);
+
+                        & a {
+                            margin: 0 10px;
+                            color: var(--fakeWhite);
+                            font-size: 14px;
+                        }
+
+                        &>svg {
+                            font-size: 16px;
+                            margin-right: 10px;
+                            /* animation: run 1s linear infinite; */
+                        }
+                    }
+
+
+                }
+
+                & .openlink {
+                    &>svg {
+                        transform: scale(1.2) rotate(12deg);
+                    }
+                }
+
+
+
+                & .openlink:nth-child(1) {
+                    & .ltoR {
+                        width: 255px;
+                        &>svg {
+                            animation: run 1s linear infinite;
+                        }
+                    }
+
+
+                }
+
+                & .openlink:nth-child(2) {
+                    & .ltoR {
+                        width: 200px;
+                        animation: run 1s linear infinite;
+                         
+                    }
+
+                }
+
+                & .openlink:nth-child(3) {
+                    & .ltoR {
+                        width: 170px;
+                        animation: run 1s linear infinite;
+                    }
+                }
+
+                & .openlink:nth-child(4) {
+                    & .ltoR {
+                        width: 177px;
+                        animation: run 1s linear infinite;
+                    }
+                }
+
+                & .openlink:nth-child(5) {
+                    & .ltoR {
+                        width: 190px;
+                        animation: run 1s linear infinite;
+                    }
+                }
+
+
+                & .icon:nth-child(1) {
+                    top: 60px;
+                    left: 345px;
+
+                }
+
+                & .icon:nth-child(2) {
+                    top: 120px;
+                    left: 400px;
+
+                }
+
+                & .icon:nth-child(3) {
+                    top: 185px;
+                    left: 430px;
+                }
+
+                & .icon:nth-child(4) {
+                    top: 255px;
+                    left: 423px;
+                }
+
+                & .icon:nth-child(5) {
+                    top: 320px;
+                    left: 410px;
+                }
+
+            }
+        }
+
+        & .d3dSocialD {
+            width: 100%;
+            display: none;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width:769px) {
+        & .socialWrap {
+
+            & .socialM {
+                display: none;
+            }
+
+            & .d3dSocialD {
+                display: flex;
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        & .socialWrap {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            & .head {
+                align-items: flex-start;
+
+                & h2 {
+                    font-size: 44px;
+                }
+
+                & p {
+                    font-size: 20px;
+                }
+            }
+
+            & .d3dSocialD {
+                width: 50%;
+            }
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        & .socialWrap {
+            justify-content: center;
+            gap: 80px;
+
+            & .head {
+
+                & h2 {
+                    font-size: 52px;
+                }
+
+                & p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
