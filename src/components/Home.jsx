@@ -12,15 +12,59 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
-
+import Pdf from "./res/faridmustafayevresume.pdf";
+import thingface from './img/thinkingface.png'
+import wooface from './img/woozyface.png'
+import dahiface from './img/dahiface.png'
+import pourface from './img/poutingface.png'
+import damnface from './img/faceexhaling.png'
+import natface from './img/neutralface.png'
 function Home() {
   const allicons = document.querySelectorAll('.round .icon')
+  const [notifyup, setNotifyup] = useState(false)
+  const [ncontent, setNcontent] = useState('I thing it\'s not working.')
+  const [nemojy, setNemojy] = useState(thingface)
+
+  const [nclick, setNclick] = useState(0)
   useEffect(() => {
     Aos.init();
   }, [])
 
+
   function clicksound() {
     new Audio(Click).play();
+  }
+
+
+  function showinfo() {
+    setNotifyup('shownotify');
+    setTimeout(() => {
+      setNotifyup('')
+    }, 2000)
+
+  }
+
+  function redButton() {
+    setNclick(nclick + 1)
+    if (nclick == 1) {
+      setNcontent('Try again')
+      setNemojy(wooface)
+    } else if (nclick == 2) {
+      setNcontent('Are you trying to broke the button?')
+      setNemojy(pourface)
+    } else if (nclick == 3) {
+      setNcontent('Its looks like you really want my Cv')
+      setNemojy(dahiface)
+    } else if (nclick == 4) {
+      setNcontent('Okayy bro one more click and leave my button alone')
+      setNemojy(damnface)
+    } else if (nclick == 5) {
+      setNcontent(' ... ')
+      setNemojy(natface)
+      window.open(Pdf);
+    }
+    clicksound()
+    showinfo()
   }
 
   setTimeout(() => {
@@ -144,15 +188,24 @@ function Home() {
       <section className="dwCV">
         <div className="container">
           <div className="dwCVWrap">
-            
+            <div className="head">
+              <p>To Download the CV </p>
+              <h2>Click the button</h2>
+            </div>
+            <div className="body">
               <button className="btn-class-name">
                 <span className="back"></span>
-                <span className="front"></span>
+                <span onClick={redButton} className="front"></span>
               </button>
-            
+            </div>
           </div>
         </div>
       </section>
+      <div className={`notifybar ${notifyup} `}>
+
+        <img src={nemojy} alt="" />
+        <p>{ncontent}</p>
+      </div>
     </main>
 
   )
