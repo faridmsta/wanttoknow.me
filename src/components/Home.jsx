@@ -12,6 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
+
 function Home() {
   const allicons = document.querySelectorAll('.round .icon')
   useEffect(() => {
@@ -117,7 +118,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="d3dSocialD">
+            <div className="d3dSocialDs">
               <Spline
                 style={{
                   height: "60vh",
@@ -126,7 +127,29 @@ function Home() {
                 scene="https://prod.spline.design/U5sCJH5Q8vbAcyi5/scene.splinecode"
               />
             </div>
+            <div className="d3dSocialDb">
+              <Spline
+                style={{
+                  height: "40vh",
+                  width: screen.width < 1024 ? '100vw' : '700px'
+                }}
+                scene="https://prod.spline.design/KZRhNz1CW1MjWXFm/scene.splinecode"
+              />
+            </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section className="dwCV">
+        <div className="container">
+          <div className="dwCVWrap">
+            
+              <button className="btn-class-name">
+                <span className="back"></span>
+                <span className="front"></span>
+              </button>
+            
           </div>
         </div>
       </section>
