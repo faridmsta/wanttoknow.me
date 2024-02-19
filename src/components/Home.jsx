@@ -58,7 +58,7 @@ function Home() {
     } else if (nclick == 4) {
       setNcontent('Okayy bro one more click and leave my button alone')
       setNemojy(damnface)
-    } else if (nclick == 5) {
+    } else if (nclick >= 5) {
       setNcontent(' ... ')
       setNemojy(natface)
       window.open(Pdf);
