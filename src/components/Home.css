@@ -9,7 +9,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -60px;
+    bottom: -100px;
     display: flex;
     align-items: center;
     gap: 5px;
