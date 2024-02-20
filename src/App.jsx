@@ -7,10 +7,12 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Path from './components/Path';
+import Loading from './components/Loading';
 function App() {
   const location = useLocation();
   const [permision, setPermision] = useState(true);
   const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
+  const [loading,setLoading] = useState(true)
 
   useEffect(() => {
     if (location.pathname === '/') {
@@ -28,7 +30,13 @@ function App() {
     return () => { document.removeEventListener('mousemove', handleMouseMove) };
   }, [mousepos])
 
-  return (
+  window.onload = (event) => {
+    setTimeout(()=>{setLoading(false)},3000)
+    // setLoading(false)
+    
+  };
+  if(loading) return <Loading />
+  else return (
     <>
       <div className="cursor"
         style={mousepos}
@@ -40,6 +48,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/career" element={<Path />} />
+        <Route path="/load" element={<Loading />} />
       </Routes>
     </>
   );
