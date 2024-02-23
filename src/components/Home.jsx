@@ -37,6 +37,7 @@ function Home() {
 
 
   function showinfo() {
+    setNotifyup('')
     setNotifyup('shownotify');
     setTimeout(() => {
       setNotifyup('')

@@ -3,7 +3,7 @@ header {
     font-family: "Rubik", sans-serif;
     width: 100%;
     background: transparent;
-    background-color: var(--mainBlack);
+    background-color: var(--background);
 
 
     & .header {
@@ -15,7 +15,7 @@ header {
             & a {
                 & img {
                     width: 150px;
-                    filter: invert(1);
+                    
                 }
             }
         }
@@ -31,7 +31,7 @@ header {
 
                     & a {
                         transition: .3s;
-                        color: var(--fakeWhite);
+                        color: var(--text);
                     }
                 }
 
@@ -120,9 +120,7 @@ header {
         right: -110%;
         width: 100vw;
         height: 100vh;
-        background: var(--mainLgBlack);
-        background: rgb(43, 45, 58);
-        background: linear-gradient(180deg, rgba(43, 45, 58, 1) 7%, rgba(54, 53, 67, 1) 38%);
+        background: linear-gradient(180deg, var(--background) 7%, var(--scbackground) 38%);
 
         & ul {
             display: flex;
@@ -134,7 +132,7 @@ header {
 
                 & a {
                     transition: .3s;
-                    color: var(--fakeWhite);
+                    color: var(--text);
                 }
             }
 

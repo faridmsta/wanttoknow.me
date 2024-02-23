@@ -1,6 +1,6 @@
 .skills {
 
-    background: var(--mainBlack);
+    background: var(--background);
     padding: 50px 0;
 
     & .skillsWrap {
