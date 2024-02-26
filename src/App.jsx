@@ -36,20 +36,24 @@ function App() {
     
   };
   if(loading) return <Loading />
-  else return (
+  else 
+  return (
     <>
       <div className="cursor"
         style={mousepos}
       ><div className="dot" /></div>
-      {permision && <Header />}
-      <Routes>
+      {/* {permision && <Header />} */}
+      <Header />
+      <Home />
+      <Path />
+      {/* <Routes>
         <Route path="/" element={<Permision />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/career" element={<Path />} />
         <Route path="/load" element={<Loading />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }

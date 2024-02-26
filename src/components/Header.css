@@ -15,7 +15,7 @@ header {
             & a {
                 & img {
                     width: 150px;
-                    
+                    /* filter: invert(1); */
                 }
             }
         }
@@ -64,8 +64,8 @@ header {
                 width: 80%;
                 height: 1.8px;
                 flex-shrink: 0;
-                border: 1px solid gray;
-                background-color: gray;
+                border: 1px solid var(--text);
+                background-color: var(--text);
                 border-radius: 2px;
             }
 

@@ -22,7 +22,7 @@ function Path() {
     
       }, 500)
     return (
-        <div>
+        <div id='cpath'>
             <main>
                 <section className="path">
                     <div className="container">
@@ -33,7 +33,7 @@ function Path() {
                                         <img src={Alplogo} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Logo programing language | 2019</h2>
+                                        <h2>Logo programing language | <br/> 2019</h2>
                                         <p>Winning the 3rd place in the Republic for Logo programming language
                                             (with Ismail Sadigov and Naida Isayeva)</p>
                                     </div>
@@ -44,7 +44,7 @@ function Path() {
                                         <img src={Brain} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Brain Ring competition | 2022</h2>
+                                        <h2>Brain Ring competition | <br/> 2022</h2>
                                         <p>We represented Our city with our team at a high level</p>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@ function Path() {
                                         <img src={Python} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Python course from Udemy | 2022</h2>
+                                        <h2>Python course from Udemy | <br/> 2022</h2>
                                         <p>I have completed a 40+ hour course from the Udemy platform</p>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ function Path() {
                                         <img src={Technest} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Technest Scholarship | 2023</h2>
+                                        <h2>Technest Scholarship | <br/> 2023</h2>
                                         <p>I got 100% scholarship from Technest as a Frontend Delevoper in Div Academy</p>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@ function Path() {
                                         <img src={Uni} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Admission to Azerbaijan Technical University | 2023</h2>
+                                        <h2>Technical University | <br/> 2023</h2>
                                         <p>By scoreing 552 out of 700 points, I was admitted to Azerbaijan Technical University</p>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@ function Path() {
                                         <img src={Interview} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>Call for an interview | 2023</h2>
+                                        <h2>Call for an interview | <br/> 2023</h2>
                                         <p>I told about my life story in the Interview that I was called for my achievements and it was great.
                                             <br />
                                             <a href="https://www.instagram.com/p/C03GUqoNXkE/" target="_blank" rel="noopener noreferrer">Click to watch.</a></p>
@@ -96,7 +96,7 @@ function Path() {
                                         <img src={Okmedia} alt="" />
                                     </div>
                                     <div className="stContent">
-                                        <h2>First job | 2024</h2>
+                                        <h2>Admission to First job | <br/> 2024</h2>
                                         <p>I started my internship as a Frontend developer at Okmedia company</p>
                                     </div>
                                 </div>

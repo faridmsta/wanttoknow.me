@@ -25,7 +25,7 @@ function Home() {
   const [ncontent, setNcontent] = useState('I thing it\'s not working.')
   const [nemojy, setNemojy] = useState(thingface)
 
-  const [nclick, setNclick] = useState(0)
+
   useEffect(() => {
     Aos.init();
   }, [])
@@ -46,24 +46,7 @@ function Home() {
   }
 
   function redButton() {
-    setNclick(nclick + 1)
-    if (nclick == 1) {
-      setNcontent('Try again')
-      setNemojy(wooface)
-    } else if (nclick == 2) {
-      setNcontent('Are you trying to broke the button?')
-      setNemojy(pourface)
-    } else if (nclick == 3) {
-      setNcontent('Its looks like you really want my Cv')
-      setNemojy(dahiface)
-    } else if (nclick == 4) {
-      setNcontent('Okayy bro one more click and leave my button alone')
-      setNemojy(damnface)
-    } else if (nclick >= 5) {
-      setNcontent(' ... ')
-      setNemojy(natface)
-      window.open(Pdf);
-    }
+    window.open(Pdf);
     clicksound()
     showinfo()
   }
@@ -186,11 +169,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="dwCV">
+      <section id='cv' className="dwCV">
         <div className="container">
           <div className="dwCVWrap">
             <div className="head">
-              <p>To Download the CV </p>
+              <p>To Download my CV </p>
               <h2>Click the button</h2>
             </div>
             <div className="body">

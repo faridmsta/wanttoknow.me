@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #root {
     overflow-x: hidden;
 }
@@ -27,8 +31,6 @@ a {
 }
 
 :root {
-
-
     --text: #0f0f10;
     --background: #f2f3f7;
     --primary: #253065;
@@ -36,6 +38,15 @@ a {
     --sctext: #6d81e3;
     --accent: #0b2eda;
     --scbackground: #fcfbff;
+
+    /* --text: #efeff0;
+    --background: #08090d;
+    --primary: #9aa5da;
+    --secondary: #1c2f92;
+    --sctext: #6d81e3;
+    --accent: #2547f4;
+    --scbackground: #030400; */
+
 
 }
 

@@ -45,8 +45,8 @@ function Header() {
                         </div>
                         <nav>
                             <ul>
-                                <li><NavLink to="#">About</NavLink></li>
-                                <li><NavLink to="/career">Career path</NavLink></li>
+                                <li><a href="#cv">About</a></li>
+                                <li><a href="#cpath">Career path</a></li>
                                 <li><NavLink to="/skills">Skills</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
