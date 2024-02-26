@@ -30,7 +30,7 @@ a {
     margin: auto;
 }
 
-:root {
+.light-mode {
     --text: #0f0f10;
     --background: #f2f3f7;
     --primary: #253065;
@@ -39,13 +39,19 @@ a {
     --accent: #0b2eda;
     --scbackground: #fcfbff;
 
-    /* --text: #efeff0;
-    --background: #08090d;
+
+
+}
+
+.dark-mode {
+
+    --text: #efeff0;
+    --background: #121212;
     --primary: #9aa5da;
     --secondary: #1c2f92;
     --sctext: #6d81e3;
     --accent: #2547f4;
-    --scbackground: #030400; */
+    --scbackground: #1d1d1d; 
 
 
 }

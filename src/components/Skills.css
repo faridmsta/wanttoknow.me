@@ -1,8 +1,9 @@
 .skills {
-
+    transition: .3s;
     background: var(--background);
     padding: 50px 0;
     font-family: "Rubik", sans-serif;
+    color: var(--text);
     & .skillsWrap {
 
         & .head{

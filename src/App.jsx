@@ -12,7 +12,7 @@ function App() {
   const location = useLocation();
   const [permision, setPermision] = useState(true);
   const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
-  const [loading,setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     if (location.pathname === '/') {
@@ -31,23 +31,32 @@ function App() {
   }, [mousepos])
 
   window.onload = (event) => {
-    setTimeout(()=>{setLoading(false)},3000)
+    setTimeout(() => { setLoading(false) }, 3000)
     // setLoading(false)
-    
+
   };
-  if(loading) return <Loading />
-  else 
-  return (
-    <>
-      <div className="cursor"
-        style={mousepos}
-      ><div className="dot" /></div>
-      {/* {permision && <Header />} */}
-      <Header />
-      <Home />
-      <Path />
-      <Skills />
-      {/* <Routes>
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+  
+
+  if (loading) return <Loading />
+  else
+    return (
+      <div className={`${isDarkMode ? 'dark-mode' : 'light-mode'}`} >
+        <div className="cursor"
+          style={mousepos}
+        ><div className="dot" /></div>
+        {/* {permision && <Header />} */}
+        <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <Home />
+        <Path />
+        <Skills />
+        
+        {/* <Routes>
         <Route path="/" element={<Permision />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -55,8 +64,8 @@ function App() {
         <Route path="/career" element={<Path />} />
         <Route path="/load" element={<Loading />} />
       </Routes> */}
-    </>
-  );
+      </div>
+    );
 }
 
 export default App;

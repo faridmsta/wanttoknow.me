@@ -32,10 +32,7 @@ import Spline from '../components/img/spline.png'
 
 function Skills() {
 
-    const rand = (min, max) => {
-        return Math.floor(Math.random()
-            * (max - min + 1)) + min;
-    };
+
 
     const list = [
         Ant,

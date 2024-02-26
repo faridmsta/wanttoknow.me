@@ -25,6 +25,7 @@
 }
 
 .intro {
+    transition: .3s;
     background-color: var(--background);
     width: 100%;
     position: relative;
@@ -210,6 +211,7 @@
 /* Social media */
 
 .social {
+    transition: .3s;
     background: var(--scbackground);
     padding: 30px 0;
     font-family: "Rubik", sans-serif;
@@ -507,9 +509,10 @@
 /* ----------------------------- */
 
 .dwCV {
+    transition: .3s;
     font-family: "Rubik", sans-serif;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: var(--background);
 
     & .dwCVWrap {

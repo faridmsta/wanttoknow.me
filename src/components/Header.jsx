@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import Logo from '../components/img/Logo.png'
 import '../components/Header.css'
 
-function Header() {
+function Header({ isDarkMode, toggleDarkMode }) {
     const [menu, setMenu] = useState(false)
     const [menuclass, setMenuclass] = useState('')
     const [menuclass2, setMenuclass2] = useState('')
@@ -40,8 +40,15 @@ function Header() {
                     <div className="header">
                         <div className="logo">
                             <NavLink to='/'>
-                                <img src={Logo} alt="" />
+                                <img style={{filter: `${isDarkMode? 'invert(1)': 'invert(0)' } `}} src={Logo} alt="" />
                             </NavLink>
+                            <label className="switch">
+                                <input onChange={toggleDarkMode} className="cb" type="checkbox" />
+                                <span className="toggle">
+                                    <span className="left">on</span>
+                                    <span className="right">off</span>
+                                </span>
+                            </label>
                         </div>
                         <nav>
                             <ul>
