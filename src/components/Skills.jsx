@@ -26,6 +26,7 @@ import Reactlogo from '../components/img/React.png'
 import Responsive from '../components/img/Responsive.png'
 import Tailwind from '../components/img/Tailwind.png'
 import Vite from '../components/img/vite.png'
+import Spline from '../components/img/spline.png'
 
 
 
@@ -55,10 +56,11 @@ function Skills() {
         Router,
         Responsive,
         Tailwind,
-        Matui,]
+        Matui,
+        Spline]
     return (
         <div>
-            <section className='skills'>
+            <section id='skills' className='skills'>
 
                 <div className="skillsWrap">
                     <div className="head">

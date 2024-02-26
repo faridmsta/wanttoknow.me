@@ -47,8 +47,8 @@ function Header() {
                             <ul>
                                 <li><a href="#cv">About</a></li>
                                 <li><a href="#cpath">Career path</a></li>
-                                <li><NavLink to="/skills">Skills</NavLink></li>
-                                <li><NavLink to="/contact">Contact</NavLink></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                         <div onClick={() => { setMenu(!menu), animationMenu(menu) }} className={`hamburgerMenu ${menuclass} ${menuclass2} `}>
@@ -60,10 +60,10 @@ function Header() {
                 </div>
                 <nav className={`togglenav ${menu && `openTogglenav`}`}>
                     <ul>
-                        <li><NavLink to="#">About</NavLink></li>
-                        <li><NavLink to="/career">Career path</NavLink></li>
-                        <li><NavLink to="/skills">Skills</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#cv">About</a></li>
+                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#cpath">Career path</a></li>
+                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#skills">Skills</a></li>
+                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
