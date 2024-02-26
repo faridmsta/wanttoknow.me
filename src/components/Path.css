@@ -76,13 +76,8 @@
     
                 & .stContent {
                     width: 50%;
-                    & h2 { 
-                    }
-    
-                    & p {
-                        & a{
-                        }
-                    }
+
+
                 }
     
                 & .image {
@@ -124,13 +119,7 @@
                 box-sizing: border-box;
                 & .stContent {
                     width: 100%;
-                    & h2 { 
-                    }
-    
-                    & p {
-                        & a{
-                        }
-                    }
+
                 }
     
                 & .image {

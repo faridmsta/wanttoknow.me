@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../components/img/Logo.png'
 import '../components/Header.css'
-import Click from '../components/sound/click.mp3'
+
 function Header() {
     const [menu, setMenu] = useState(false)
     const [menuclass, setMenuclass] = useState('')
@@ -39,7 +39,7 @@ function Header() {
                 <div className="container">
                     <div className="header">
                         <div className="logo">
-                            <NavLink to='/home'>
+                            <NavLink to='/'>
                                 <img src={Logo} alt="" />
                             </NavLink>
                         </div>

@@ -2,30 +2,40 @@
 
     background: var(--background);
     padding: 50px 0;
-
+    font-family: "Rubik", sans-serif;
     & .skillsWrap {
 
-        overflow-y: hidden;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-
-        & .logoWrap {
-            box-sizing: border-box;
+        & .head{
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            width: 350px;
-            height: 350px;
-            
-           
-            & img {
-                transition: .3s;
-                height: 100%;
-                object-fit: contain;
-                width: 100%;
+            & h2{
+                font-weight: 500;
+                font-size: clamp(48px, 5vw, 99px);
+            }
+        }
+        & .logoWrap {
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 40vh;
+            box-sizing: border-box;
 
+
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .logoWrap:nth-child(10) {
+
+            width: 100%;
+
+            & img {
+                width: 70%;
             }
         }
 

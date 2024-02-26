@@ -46,6 +46,7 @@ function App() {
       <Header />
       <Home />
       <Path />
+      <Skills />
       {/* <Routes>
         <Route path="/" element={<Permision />} />
         <Route path="/home" element={<Home />} />

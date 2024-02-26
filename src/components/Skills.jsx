@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react'
 import '../components/Skills.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
 import Ajax from '../components/img/AJAX.png'
 import Ant from '../components/img/ant-design.png'
 import Bootstrap from '../components/img/bootstrap.webp'
@@ -24,9 +31,10 @@ import Vite from '../components/img/vite.png'
 
 function Skills() {
 
-    function rand(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+    const rand = (min, max) => {
+        return Math.floor(Math.random()
+            * (max - min + 1)) + min;
+    };
 
     const list = [
         Ant,
@@ -51,19 +59,40 @@ function Skills() {
     return (
         <div>
             <section className='skills'>
-                <div className="container">
-                    <div className="skillsWrap">
 
+                <div className="skillsWrap">
+                    <div className="head">
+                        <h2>Skills</h2>
+                    </div>
+
+                    <Swiper
+                        effect={'coverflow'}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={(screen.width < 450) ? 'auto' : (screen.width < 1024) ? '2' : '4'}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: false,
+                        }}
+                        pagination={false}
+                        modules={[EffectCoverflow, Pagination]}
+                        className="mySwiper"
+                    >
                         {list.map((item, index) => {
                             return (
-                                <div key={index} /*style={{ rotate: rand(-10, 10) + 'deg' }}*/ className="logoWrap">
-                                    <img src={item} alt="" />
-                                </div>
+                                <SwiperSlide key={index} className="logoWrap">
+                                    <img src={item} />
+                                </SwiperSlide>
                             )
                         })}
 
-                    </div>
+                    </Swiper>
+
                 </div>
+
             </section>
         </div>
     )
