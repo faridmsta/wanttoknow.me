@@ -18,16 +18,20 @@ header {
             & a {
                 display: flex;
                 align-items: center;
-                padding: 10px;
+                padding: 20px 0 10px;
 
                 & img {
-                    width: 55px;
+                    width: 160px;
                     
                 }
             }
 
             & .switch {
                 margin-left: 50px;
+                @media screen and (max-width:425px){
+                    margin-left: 20px;
+                    
+                }
             }
         }
 

@@ -70,7 +70,9 @@
 @media screen and (min-width: 768px) {
     .path {
         & .pathWrap {
-    
+            & .story{
+                row-gap: 10px;
+            }
             & .stPart { 
                 display: flex;
                 flex-direction: row;
