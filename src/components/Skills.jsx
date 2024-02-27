@@ -5,7 +5,8 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+import { EffectCoverflow, Pagination,Autoplay, Navigation  } from 'swiper/modules';
 
 import Ajax from '../components/img/AJAX.png'
 import Ant from '../components/img/ant-design.png'
@@ -80,21 +81,20 @@ function Skills() {
                             modifier: 1,
                             slideShadows: false,
                         }}
-                        
                         pagination={false}
-                        modules={[EffectCoverflow, Pagination]}
-                        
+                        modules={[Autoplay, Pagination, Navigation, EffectCoverflow,]}
                         className="mySwiper"
                     >
                         {list.map((item, index) => {
                             return (
                                 <SwiperSlide key={index} className="logoWrap">
-                                    <img src={item} />
+                                    <img src={item} alt={`Item ${index}`} />
                                 </SwiperSlide>
                             )
                         })}
-
                     </Swiper>
+
+
 
                 </div>
 

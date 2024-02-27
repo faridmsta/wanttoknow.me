@@ -18,10 +18,11 @@ header {
             & a {
                 display: flex;
                 align-items: center;
+                padding: 10px;
 
                 & img {
-                    width: 150px;
-                    /* filter: invert(1); */
+                    width: 55px;
+                    
                 }
             }
 

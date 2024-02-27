@@ -50,6 +50,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                                 </span>
                             </label>
                         </div>
+                        
                         <nav>
                             <ul>
                                 <li><a href="#cv">About</a></li>
@@ -57,6 +58,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                                 <li><a href="#skills">Skills</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
+                            
                         </nav>
                         <div onClick={() => { setMenu(!menu), animationMenu(menu) }} className={`hamburgerMenu ${menuclass} ${menuclass2} `}>
                             <span></span>
