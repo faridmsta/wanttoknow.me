@@ -100,7 +100,7 @@
 
 
 .intro::before {
-    transition: .3s ;
+    transition: .3s;
     content: "";
     width: 100%;
     height: 130px;
@@ -250,139 +250,67 @@
         }
 
         & .socialM {
-            height: 50vh;
+            /* height: 50vh; */
+            padding: 30px 0;
             box-sizing: border-box;
 
-            & .round {
-                margin: 50px 0 0;
-                position: relative;
-                right: 50%;
-                width: 500px;
-                height: 500px;
-                background-color: var(--background);
-                border-radius: 39% 61% 63% 37% / 42% 49% 51% 58%;
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
 
-                & .icon {
-                    transition: all 0.3s;
-                    display: flex;
-                    align-items: center;
-                    position: absolute;
-                    gap: 20px;
+            .cards .red {
+                background-color: #ee262b;
+            }
+            .cards .redi {
+                background-color: #d7307a;
+            }
 
-                    & svg {
-                        font-size: 48px;
-                        color: white;
-                        transition: transform 0.3s;
-                    }
+            .cards .blue {
+                background-color: #0882bd;
+            }
+            .cards .bluef {
+                background-color: #486cb4;
+            }
+            
+            .cards .green {
+                background-color: #22c55e;
+            }
+            .cards .grey {
+                background-color: #080808;
+            }
 
-                    & .ltoR {
-                        overflow: hidden;
-                        box-sizing: border-box;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        height: 40px;
+            .cards .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                height: 100px;
+                width: 250px;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+                transition: 400ms;
+            }
 
-                        width: 0px;
-                        background-color: var(--purple);
-                        color: var(--text);
-                        transition: width 0.3s, padding 0.3s;
-                        border-right: 5px solid var(--orange);
+            .cards .card p.tip {
+                font-size: 1em;
+                font-weight: 700;
+            }
 
-                        & a {
-                            margin: 0 10px;
-                            color: var(--text);
-                            font-size: 14px;
-                        }
+            .cards .card p.second-text {
+                font-size: .7em;
+            }
 
-                        &>svg {
-                            font-size: 16px;
-                            margin-right: 10px;
-                            /* animation: run 1s linear infinite; */
-                        }
-                    }
+            .cards .card:hover {
+                transform: scale(1.1, 1.1);
+            }
 
-
-                }
-
-                & .openlink {
-                    &>svg {
-                        transform: scale(1.2) rotate(12deg);
-                    }
-                }
-
-
-
-                & .openlink:nth-child(1) {
-                    & .ltoR {
-                        width: 255px;
-
-                        &>svg {
-                            animation: run 1s linear infinite;
-                        }
-                    }
-
-
-                }
-
-                & .openlink:nth-child(2) {
-                    & .ltoR {
-                        width: 200px;
-                        animation: run 1s linear infinite;
-
-                    }
-
-                }
-
-                & .openlink:nth-child(3) {
-                    & .ltoR {
-                        width: 170px;
-                        animation: run 1s linear infinite;
-                    }
-                }
-
-                & .openlink:nth-child(4) {
-                    & .ltoR {
-                        width: 177px;
-                        animation: run 1s linear infinite;
-                    }
-                }
-
-                & .openlink:nth-child(5) {
-                    & .ltoR {
-                        width: 190px;
-                        animation: run 1s linear infinite;
-                    }
-                }
-
-
-                & .icon:nth-child(1) {
-                    top: 60px;
-                    left: 345px;
-
-                }
-
-                & .icon:nth-child(2) {
-                    top: 120px;
-                    left: 400px;
-
-                }
-
-                & .icon:nth-child(3) {
-                    top: 185px;
-                    left: 430px;
-                }
-
-                & .icon:nth-child(4) {
-                    top: 255px;
-                    left: 423px;
-                }
-
-                & .icon:nth-child(5) {
-                    top: 320px;
-                    left: 410px;
-                }
-
+            .cards:hover>.card:not(:hover) {
+                filter: blur(10px);
+                transform: scale(0.9, 0.9);
             }
         }
 

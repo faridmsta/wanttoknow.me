@@ -69,7 +69,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
   return (
 
     <main>
-      <section className={`intro ${isDarkMode?  'intro-dark' : ''}`}>
+      <section className={`intro ${isDarkMode ? 'intro-dark' : ''}`}>
         <div className="container">
           <div className="introWrap">
             <div className="mainContent">
@@ -100,7 +100,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
           </div>
         </div>
       </section>
-      <section className={`social ${isDarkMode?  'social-dark' : ''}`}>
+      <section className={`social ${isDarkMode ? 'social-dark' : ''}`}>
         <div className="container">
           <div className="socialWrap">
             <div className="head">
@@ -108,41 +108,26 @@ function Home({ isDarkMode, toggleDarkMode }) {
               <p>Just tap on the icons and and follow the link</p>
             </div>
             <div className="socialM">
-              <div className="round">
-                <div onClick={showlink} className='icon'>
-                  <FaFacebookSquare />
-                  <div className="ltoR">
-                    <a href="https://www.facebook.com/" target="_blank">Farid_Mustafayev</a>
-                    <FaArrowRight />
-                  </div>
+              <div class="cards">
+                <div class="card redi">
+                  <p class="tip">< FaInstagram /></p>
+                  <p class="second-text">@faridmsta</p>
                 </div>
-                <div onClick={showlink} className='icon'>
-                  <FaInstagram />
-                  <div className="ltoR">
-                    <a href="https://www.instagram.com/faridmsta/" target="_blank">@faridmsta</a>
-                    <FaArrowRight />
-                  </div>
+                <div class="card bluef">
+                  <p class="tip"><FaFacebookSquare/></p>
+                  <p class="second-text">Fərid Mustafayv</p>
                 </div>
-                <div onClick={showlink} className='icon'>
-                  <FaGithub />
-                  <div className="ltoR">
-                    <a href="https://github.com/faridmsta" target="_blank">faridmsta</a>
-                    <FaArrowRight />
-                  </div>
+                <div class="card grey">
+                  <p class="tip"><FaGithub/></p>
+                  <p class="second-text">faridmsta</p>
                 </div>
-                <div onClick={showlink} className='icon'>
-                  <FaLinkedin />
-                  <div className="ltoR">
-                    <a href="https://www.linkedin.com/in/faridmustafayev/" target="_blank">Farid_Mustafayev</a>
-                    <FaArrowRight />
-                  </div>
+                <div class="card blue">
+                  <p class="tip"><FaLinkedin /></p>
+                  <p class="second-text">Farid Mustafayev</p>
                 </div>
-                <div onClick={showlink} className='icon'>
-                  <FaYoutube />
-                  <div className="ltoR">
-                    <a href="https://www.youtube.com/channel/UCxpfu2JXCY8ZQVijUnyGllA" target="_blank">Farid_Mustafayev</a>
-                    <FaArrowRight />
-                  </div>
+                <div class="card red">
+                  <p class="tip">< FaYoutube /></p>
+                  <p class="second-text">@faridmsta</p>
                 </div>
               </div>
             </div>
