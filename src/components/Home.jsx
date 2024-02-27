@@ -19,7 +19,7 @@ import dahiface from './img/dahiface.png'
 import pourface from './img/poutingface.png'
 import damnface from './img/faceexhaling.png'
 import natface from './img/neutralface.png'
-function Home() {
+function Home({ isDarkMode, toggleDarkMode }) {
   const allicons = document.querySelectorAll('.round .icon')
   const [notifyup, setNotifyup] = useState(false)
   const [ncontent, setNcontent] = useState('I thing it\'s not working.')
@@ -69,7 +69,7 @@ function Home() {
   return (
 
     <main>
-      <section className="intro">
+      <section className={`intro ${isDarkMode?  'intro-dark' : ''}`}>
         <div className="container">
           <div className="introWrap">
             <div className="mainContent">
@@ -100,7 +100,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="social">
+      <section className={`social ${isDarkMode?  'social-dark' : ''}`}>
         <div className="container">
           <div className="socialWrap">
             <div className="head">

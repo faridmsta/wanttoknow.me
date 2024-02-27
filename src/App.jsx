@@ -31,8 +31,8 @@ function App() {
   }, [mousepos])
 
   window.onload = (event) => {
-    setTimeout(() => { setLoading(false) }, 3000)
-    // setLoading(false)
+    // setTimeout(() => { setLoading(false) }, 3000)
+    setLoading(false)
 
   };
 
@@ -52,7 +52,7 @@ function App() {
         ><div className="dot" /></div>
         {/* {permision && <Header />} */}
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <Home />
+        <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}  />
         <Path />
         <Skills />
         
