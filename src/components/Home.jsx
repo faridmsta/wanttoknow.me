@@ -111,23 +111,23 @@ function Home({ isDarkMode, toggleDarkMode }) {
               <div class="cards">
                 <div class="card redi">
                   <p class="tip">< FaInstagram /></p>
-                  <p class="second-text">@faridmsta</p>
+                  <p class="second-text"><a href="https://www.instagram.com/faridmsta/">@faridmsta</a></p>
                 </div>
                 <div class="card bluef">
                   <p class="tip"><FaFacebookSquare/></p>
-                  <p class="second-text">Fərid Mustafayv</p>
+                  <p class="second-text"><a href="https://www.facebook.com/profile.php?id=100014459298474">Fərid Mustafayev</a></p>
                 </div>
                 <div class="card grey">
                   <p class="tip"><FaGithub/></p>
-                  <p class="second-text">faridmsta</p>
+                  <p class="second-text"><a href="https://github.com/faridmsta">faridmsta</a></p>
                 </div>
                 <div class="card blue">
                   <p class="tip"><FaLinkedin /></p>
-                  <p class="second-text">Farid Mustafayev</p>
+                  <p class="second-text"><a href="https://www.linkedin.com/in/faridmustafayev/">Farid Mustafayev</a></p>
                 </div>
                 <div class="card red">
                   <p class="tip">< FaYoutube /></p>
-                  <p class="second-text">@faridmsta</p>
+                  <p class="second-text"><a href="https://www.youtube.com/channel/UCxpfu2JXCY8ZQVijUnyGllA">Farid Mustafayev</a></p>
                 </div>
               </div>
             </div>
