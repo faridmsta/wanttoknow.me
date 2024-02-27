@@ -68,6 +68,10 @@ function Skills() {
                         effect={'coverflow'}
                         grabCursor={true}
                         centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         slidesPerView={(screen.width < 450) ? 'auto' : (screen.width < 1024) ? '2' : '4'}
                         coverflowEffect={{
                             rotate: 50,
@@ -76,8 +80,10 @@ function Skills() {
                             modifier: 1,
                             slideShadows: false,
                         }}
+                        
                         pagination={false}
                         modules={[EffectCoverflow, Pagination]}
+                        
                         className="mySwiper"
                     >
                         {list.map((item, index) => {
