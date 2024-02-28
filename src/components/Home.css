@@ -334,7 +334,7 @@
     }
 
     @media screen and (min-width:769px) {
-        min-height: 800px;
+       
         & .socialWrap {
 
             & .socialM {
@@ -343,6 +343,10 @@
 
             & .d3dSocialDs {
                 display: flex;
+                min-height: 800px;
+            }
+            & .d3dSocialDb {
+                min-height: 800px;
             }
         }
     }
