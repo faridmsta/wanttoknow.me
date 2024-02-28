@@ -334,6 +334,7 @@
     }
 
     @media screen and (min-width:769px) {
+        min-height: 800px;
         & .socialWrap {
 
             & .socialM {
@@ -371,7 +372,7 @@
     }
 
     @media screen and (min-width:1440px) {
-        min-height: 55vh;
+        
 
         & .socialWrap {
             justify-content: space-around;
