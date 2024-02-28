@@ -325,11 +325,13 @@
             width: 100%;
             display: none;
             justify-content: center;
+            align-items: center;
         }
 
         & .d3dSocialDb {
             display: none;
             justify-content: center;
+            align-items: center;
         }
     }
 
@@ -346,6 +348,7 @@
                 min-height: 800px;
             }
             & .d3dSocialDb {
+                
                 min-height: 800px;
             }
         }
