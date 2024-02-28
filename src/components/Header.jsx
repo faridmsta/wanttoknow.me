@@ -72,7 +72,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#cv">About</a></li>
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#cpath">Career path</a></li>
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#skills">Skills</a></li>
-                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#contact">Contact</a></li>
+                        <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#foot">Contact</a></li>
                     </ul>
                 </nav>
             </header>
