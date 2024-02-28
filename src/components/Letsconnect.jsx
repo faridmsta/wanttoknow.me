@@ -57,7 +57,7 @@ function Letsconnect({ isDarkMode, toggleDarkMode }) {
                         <div className="d3dSocialDs">
                             <Spline
                                 style={{
-                                    height: "60vh",
+                                    height: "700px",
                                     width: screen.width < 1024 ? '100vw' : '700px'
                                 }}
                                 scene="https://prod.spline.design/U5sCJH5Q8vbAcyi5/scene.splinecode"
@@ -80,7 +80,7 @@ function Letsconnect({ isDarkMode, toggleDarkMode }) {
                         <div className="d3dSocialDb">
                             <Spline
                                 style={{
-                                    height: "40vh",
+                                    height: "600px",
                                     width: screen.width < 1024 ? '100vw' : '700px'
                                 }}
                                 scene="https://prod.spline.design/KZRhNz1CW1MjWXFm/scene.splinecode"

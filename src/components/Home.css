@@ -325,18 +325,16 @@
             width: 100%;
             display: none;
             justify-content: center;
-            align-items: center;
         }
 
         & .d3dSocialDb {
             display: none;
             justify-content: center;
-            align-items: center;
         }
     }
 
     @media screen and (min-width:769px) {
-       
+        min-height: 800px;
         & .socialWrap {
 
             & .socialM {
@@ -345,11 +343,6 @@
 
             & .d3dSocialDs {
                 display: flex;
-                min-height: 800px;
-            }
-            & .d3dSocialDb {
-                
-                min-height: 800px;
             }
         }
     }
@@ -379,7 +372,7 @@
     }
 
     @media screen and (min-width:1440px) {
-        
+        min-height: 400px;
 
         & .socialWrap {
             justify-content: space-around;
