@@ -56,7 +56,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                                 <li><a href="#cv">About</a></li>
                                 <li><a href="#cpath">Career path</a></li>
                                 <li><a href="#skills">Skills</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#foot">Contact</a></li>
                             </ul>
                             
                         </nav>

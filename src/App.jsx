@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Path from './components/Path';
 import Loading from './components/Loading';
+import { Toaster } from 'react-hot-toast';
 function App() {
   const location = useLocation();
   const [permision, setPermision] = useState(true);
@@ -41,7 +42,7 @@ function App() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-  
+
 
   if (loading) return <Loading />
   else
@@ -51,11 +52,15 @@ function App() {
           style={mousepos}
         ><div className="dot" /></div>
         {/* {permision && <Header />} */}
+
+        <Toaster toastOptions={{className: 'informer', }} />
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}  />
+        <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Path />
         <Skills />
-        
+        <Contact />
+
+
         {/* <Routes>
         <Route path="/" element={<Permision />} />
         <Route path="/home" element={<Home />} />

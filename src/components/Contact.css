@@ -1,0 +1,140 @@
+.footers{
+    background: var(--scbackground);
+    
+    
+}
+
+.footer {
+    max-width: 1024px;
+    font-family: "Rubik", sans-serif;
+    padding: 30px 0;
+    margin: auto;
+
+
+    & .footerWrap {
+        display: flex;
+        flex-direction: column;
+
+        & .head {
+            text-align: center;
+            color: var(--text);
+            padding: 10px 0 40px;
+        }
+
+        & .contactUs {
+            & .image {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & .body {
+                & form {
+                    & .input {
+                        position: relative;
+                        margin: 0px 0 20px;
+
+                        & .focused {
+                            color: var(--text);
+                            background: transparent;
+                            margin: 0px 0px 10px;
+                            padding: 20px 5px 15px;
+                            outline: none;
+                            width: 100%;
+                            border: none;
+                            border-bottom: 1px solid #b3b3b3;
+                        }
+
+                        & label {
+                            color: var(--sctext);
+                            position: absolute;
+                            left: 5px;
+                            top: 46%;
+                            transform: translateY(-50%);
+                            transition: .6s ease-in-out;
+                            font-size: 14px;
+
+                        }
+
+                        .focused:valid+label {
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                        }
+                    }
+                & .message{
+                    & textarea{
+                        resize: none;
+                    }
+                }
+
+                    & button {
+                        font-family: 'Roboto', sans-serif;
+                        color: #fff;
+                        background: #4dcc67;
+                        font-size: 20px;
+                        padding: 15px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        margin: 24px 0px 0px;
+                        transition: .6s;
+                        width: 100%;
+
+                    }
+                    & button:focus{
+                        scale: .95;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:758px) {
+    .footer {
+
+        & .footerWrap {
+            & .head {
+
+            }
+
+
+            & .contactUs {
+                display: flex;
+                justify-content: space-between;
+                & .image {
+                    display: flex;
+                    align-items: center;
+                    width: 49%;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+                & .body {
+                    width: 49%;
+                    display: flex;
+                    align-self: center;
+                    & form {
+                        width: 100%;
+                        & .input {
+
+                            & .focused {}
+
+                            & label {}
+
+                            .focused:valid+label {}
+                        }
+
+                        & button {}
+                    }
+                }
+            }
+        }
+
+    }
+}
