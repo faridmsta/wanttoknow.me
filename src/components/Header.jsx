@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../components/img/Logo.png'
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
 import '../components/Header.css'
 
 function Header({ isDarkMode, toggleDarkMode }) {
@@ -45,8 +47,8 @@ function Header({ isDarkMode, toggleDarkMode }) {
                             <label className="switch">
                                 <input onChange={toggleDarkMode} className="cb" type="checkbox" />
                                 <span className="toggle">
-                                    <span className="left">on</span>
-                                    <span className="right">off</span>
+                                    <span className="left"><FaSun/></span>
+                                    <span className="right"><FaMoon /></span>
                                 </span>
                             </label>
                         </div>

@@ -19,6 +19,15 @@
             text-align: center;
             color: var(--text);
             padding: 10px 0 40px;
+            & h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img{
+                    margin-left: 5px;
+                    width: 24px;
+                }
+            }
         }
 
         & .contactUs {

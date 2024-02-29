@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css'
 import Msjhuman from './img/Typing-rafiki.svg'
 import toast from 'react-hot-toast';
+import handwave from './img/waveinghand.png'
 function Contact() {
 
   const onSubmit = async (event) => {
@@ -35,7 +36,7 @@ function Contact() {
         <div className="container">
           <div className="footerWrap">
             <div className="head">
-              <h2>Just say,Hi!</h2>
+              <h2>Say,Hi! <img src={handwave} alt="" /></h2>
               <p>To get in touch with me, just text.</p>
             </div>
 
