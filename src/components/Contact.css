@@ -46,6 +46,7 @@
                         margin: 0px 0 20px;
 
                         & .focused {
+                            border-radius: 10px 10px 0 0;
                             color: var(--text);
                             background: transparent;
                             margin: 0px 0px 10px;
@@ -67,10 +68,11 @@
 
                         }
 
-                        .focused:valid+label {
+                        .focused:valid + label {
                             position: absolute;
                             top: 5px;
                             left: 5px;
+                            
                         }
                     }
                 & .message{

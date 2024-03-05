@@ -47,11 +47,11 @@ function Contact() {
               <div className="body">
                 <form onSubmit={onSubmit} >
                   <div className="input">
-                    <input required type="text" className="focused" id="inputname" />
+                    <input required type="text" name="name" className="focused" id="inputname" />
                     <label htmlFor="inp">Username</label>
                   </div>
                   <div className="input">
-                    <input required type="text" className="focused" id="inputmail" />
+                    <input required type="email" name="email" className="focused" id="inputmail" />
                     <label htmlFor="inp">Email</label>
                   </div>
                   <div className="message input">

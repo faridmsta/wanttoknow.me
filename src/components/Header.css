@@ -169,6 +169,7 @@ header {
 
 /* The switch - the box around the slider */
 .l {
+    cursor: none;
     display: block;
     margin-bottom: 1.5em;
     font-size: 1em;
