@@ -44,13 +44,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                             <NavLink to='/'>
                                 <img style={{filter: `${isDarkMode? 'invert(1)': 'invert(0)' } `}} src={Logo} alt="" />
                             </NavLink>
-                            <label className="switch">
-                                <input onChange={toggleDarkMode} className="cb" type="checkbox" />
-                                <span className="toggle">
-                                    <span className="left"><FaSun/></span>
-                                    <span className="right"><FaMoon /></span>
-                                </span>
-                            </label>
+                            
                         </div>
                         
                         <nav>
@@ -59,6 +53,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                                 <li><a href="#cpath">Career path</a></li>
                                 <li><a href="#skills">Skills</a></li>
                                 <li><a href="#foot">Contact</a></li>
+                                <li><input onChange={toggleDarkMode} type="checkbox" class="l"/></li>
                             </ul>
                             
                         </nav>
@@ -75,6 +70,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#cpath">Career path</a></li>
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#skills">Skills</a></li>
                         <li><a onClick={() => { setMenu(!menu), animationMenu(menu) }} href="#foot">Contact</a></li>
+                        <li><input onChange={toggleDarkMode} type="checkbox" class="l"/></li>
                     </ul>
                 </nav>
             </header>

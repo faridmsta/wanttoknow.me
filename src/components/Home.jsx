@@ -10,13 +10,9 @@ import Click from '../components/sound/click.mp3'
 
 import Pdf from "./res/faridmustafayevresume.pdf";
 import thingface from './img/thinkingface.png'
-import wooface from './img/woozyface.png'
-import dahiface from './img/dahiface.png'
-import pourface from './img/poutingface.png'
-import damnface from './img/faceexhaling.png'
-import natface from './img/neutralface.png'
+
 function Home({ isDarkMode, toggleDarkMode }) {
-  const allicons = document.querySelectorAll('.round .icon')
+
   const [notifyup, setNotifyup] = useState(false)
   const [ncontent, setNcontent] = useState('I thing it\'s not working.')
   const [nemojy, setNemojy] = useState(thingface)
@@ -51,16 +47,6 @@ function Home({ isDarkMode, toggleDarkMode }) {
     document.querySelector('.mainContent').style.opacity = "1"
   }, 500)
 
-  function showlink(e) {
-    for (let i = 0; i < allicons.length; i++) {
-      if (allicons[i].classList != e.currentTarget.classList) {
-        allicons[i].classList.remove('openlink')
-      }
-
-    }
-    e.currentTarget.classList.toggle('openlink')
-
-  }
 
   return (
 
@@ -79,6 +65,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
                   <p>
                     I am a Computer Engineering student at Azerbaijan Technical University.
                   </p>
+                  
                 </div>
               </div>
 

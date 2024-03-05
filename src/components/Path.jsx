@@ -7,6 +7,7 @@ import Technest from '../components/img/Technest.jpg'
 import Uni from '../components/img/uni.jpg'
 import Okmedia from '../components/img/okmedia.jpg'
 import Interview from '../components/img/intervi.jpg'
+import Graduent from './img/mezun1.jpg'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -98,6 +99,15 @@ function Path() {
                                     <div className="stContent">
                                         <h2>Admission to First job <br/> 2024</h2>
                                         <p>I started my internship as a Frontend developer at Okmedia company</p>
+                                    </div>
+                                </div>
+                                <div className="stPart " data-aos="fade-right">
+                                    <div className="image">
+                                        <img src={Graduent} alt="" />
+                                    </div>
+                                    <div className="stContent">
+                                        <h2>Graduation from Div Academy<br/> 2024</h2>
+                                        <p>After a lot of sleepless nights and hard work I finally graduated from Div Academy</p>
                                     </div>
                                 </div>
                             </div>
