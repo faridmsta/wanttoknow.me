@@ -1,0 +1,11 @@
+.about{
+    background: var(--background);
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & img{
+        width: 5%;
+    }
+}

@@ -9,6 +9,8 @@ import Skills from './components/Skills';
 import Path from './components/Path';
 import Loading from './components/Loading';
 import { Toaster } from 'react-hot-toast';
+import About from './components/About';
+
 function App() {
   const location = useLocation();
   const [permision, setPermision] = useState(true);
@@ -56,6 +58,7 @@ function App() {
         <Toaster toastOptions={{className: 'informer', }} />
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        {/* <About/> */}
         <Path />
         <Skills />
         <Contact />

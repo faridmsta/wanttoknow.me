@@ -37,7 +37,7 @@ header {
                 & li {
                     transition: .3s;
                     padding: 12px 18px;
-
+                    border-bottom: 2px solid var(--background);
                     & a {
                         transition: .3s;
                         color: var(--text);
@@ -45,9 +45,21 @@ header {
                 }
 
                 & li:hover {
+                    border-bottom: 2px solid var(--primary);
 
                     & a {
-                        color: var(--orange);
+                        color: var(--primary);
+
+                        
+                    }
+                }
+                & li:last-child:hover  {
+                    border-bottom: 2px solid var(--background);
+
+                    & a {
+                        color: var(--text);
+
+                        
                     }
                 }
             }

@@ -110,9 +110,7 @@
     .footer {
 
         & .footerWrap {
-            & .head {
 
-            }
 
 
             & .contactUs {
@@ -134,16 +132,7 @@
                     align-self: center;
                     & form {
                         width: 100%;
-                        & .input {
 
-                            & .focused {}
-
-                            & label {}
-
-                            .focused:valid+label {}
-                        }
-
-                        & button {}
                     }
                 }
             }
