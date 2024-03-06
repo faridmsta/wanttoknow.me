@@ -48,10 +48,10 @@ function Contact() {
                 <form onSubmit={onSubmit} >
                   <div className="input">
                     <input required type="text" name="name" className="focused" id="inputname" />
-                    <label htmlFor="inp">Username</label>
+                    <label htmlFor="inp">Name</label>
                   </div>
                   <div className="input">
-                    <input required type="email" name="email" className="focused" id="inputmail" />
+                    <input required type="text" name="email" className="focused" id="inputmail" />
                     <label htmlFor="inp">Email</label>
                   </div>
                   <div className="message input">
