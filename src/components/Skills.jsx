@@ -31,7 +31,7 @@ import Spline from '../components/img/spline.png'
 
 
 
-function Skills() {
+function Skills({isDarkMode}) {
 
 
 
@@ -86,9 +86,10 @@ function Skills() {
                         className="mySwiper"
                     >
                         {list.map((item, index) => {
+
                             return (
-                                <SwiperSlide key={index} className="logoWrap">
-                                    <img src={item} alt={`Item ${index}`} />
+                                <SwiperSlide key={index}  className="logoWrap">
+                                    <img src={item} style={{filter: (isDarkMode && index==4)&& 'invert(1)' }} alt={`Item ${index}`} />
                                 </SwiperSlide>
                             )
                         })}

@@ -60,7 +60,7 @@ function App() {
         <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         {/* <About/> */}
         <Path />
-        <Skills />
+        <Skills isDarkMode={isDarkMode} />
         <Contact />
 
 
