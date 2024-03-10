@@ -1,11 +1,21 @@
-.about{
+.aboutWrap {
     background: var(--background);
-    font-family: "Rubik", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    & img{
-        width: 5%;
+
+    & .about {
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & .text{
+            width: 100%;
+            & p{
+                width:100%;
+                
+            }
+        }
+        & img {
+            width: 100%;
+        }
     }
 }

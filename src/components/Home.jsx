@@ -63,7 +63,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
                 <span></span>
                 <div className="myText">
                   <p>
-                    I am a Computer Engineering student at Azerbaijan Technical University.
+                    I am a Computer Engineering student and Frontend Developer.
                   </p>
                   
                 </div>
