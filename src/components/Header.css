@@ -37,29 +37,50 @@ header {
                 & li {
                     transition: .3s;
                     padding: 12px 18px;
-                    border-bottom: 2px solid var(--background);
+
+                    position: relative;
+
                     & a {
+                        height: 100%;
                         transition: .3s;
                         color: var(--text);
+
+                    }
+
+                    & span {
+                        transition: 0.3s;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        position: absolute;
+                        width: 0%;
+                        border: 2px solid var(--background);
                     }
                 }
 
                 & li:hover {
-                    border-bottom: 2px solid var(--primary);
 
                     & a {
                         color: var(--primary);
 
-                        
+
+                    }
+                    & span {
+
+                        width: 100%;
+                        border: 2px solid var(--primary);
                     }
                 }
-                & li:last-child:hover  {
-                    border-bottom: 2px solid var(--background);
 
-                    & a {
-                        color: var(--text);
-
-                        
+                & li:last-child:hover {
+                    & span {
+                        transition: 0.3s;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        position: absolute;
+                        width: 0%;
+                        border: 2px solid var(--background);
                     }
                 }
             }

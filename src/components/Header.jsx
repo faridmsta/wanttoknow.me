@@ -49,10 +49,10 @@ function Header({ isDarkMode, toggleDarkMode }) {
                         
                         <nav>
                             <ul>
-                                <li><a href="#cv">About</a></li>
-                                <li><a href="#cpath">Career path</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#foot">Contact</a></li>
+                                <li><a href="#cv">About</a><span></span></li>
+                                <li><a href="#cpath">Career path</a><span></span></li>
+                                <li><a href="#skills">Skills</a><span></span></li>
+                                <li><a href="#foot">Contact</a><span></span></li>
                                 <li><input onChange={toggleDarkMode} type="checkbox" class="l"/></li>
                             </ul>
                             
