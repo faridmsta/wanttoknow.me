@@ -28,7 +28,7 @@ import Responsive from '../components/img/Responsive.png'
 import Tailwind from '../components/img/Tailwind.png'
 import Vite from '../components/img/vite.png'
 import Spline from '../components/img/spline.png'
-
+import Scss from "./../components/img/scss.png"
 
 
 function Skills({isDarkMode}) {
@@ -45,8 +45,9 @@ function Skills({isDarkMode}) {
         Python,
         Npm,
         Jquery,
-        Css,
         Html,
+        Css,
+        Scss,
         Ajax,
         Json,
         Reactlogo,
@@ -55,7 +56,8 @@ function Skills({isDarkMode}) {
         Responsive,
         Tailwind,
         Matui,
-        Spline]
+        Spline
+    ]
     return (
         <div>
             <section id='skills' className='skills'>
