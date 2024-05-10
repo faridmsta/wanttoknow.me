@@ -29,7 +29,7 @@ import Tailwind from '../components/img/Tailwind.png'
 import Vite from '../components/img/vite.png'
 import Spline from '../components/img/spline.png'
 import Scss from "./../components/img/scss.png"
-
+import Cpp from "./../components/img/cpp.png"
 
 function Skills({isDarkMode}) {
 
@@ -43,6 +43,7 @@ function Skills({isDarkMode}) {
         Github,
         Js,
         Python,
+        Cpp,
         Npm,
         Jquery,
         Html,
