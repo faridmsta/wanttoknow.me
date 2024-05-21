@@ -81,3 +81,27 @@ a {
 
 
 */
+/* Scrollbar container */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    transition: .3s;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background:  #6d81e3; /* Color of the thumb when hovered */
+    /* darkseagreen; Color of the track */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the thumb */
+    border-radius: 10px; /* Round corners of the thumb */
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:  darkseagreen; /* Color of the thumb when hovered */
+}
+
+
