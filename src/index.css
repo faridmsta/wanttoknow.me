@@ -7,7 +7,7 @@
     list-style: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -50,7 +50,7 @@ a {
     --secondary: #1c2f92;
     --sctext: #6d81e3;
     --accent: #2547f4;
-    --scbackground: #1d1d1d; 
+    --scbackground: #1d1d1d;
 
 
 }
@@ -83,25 +83,32 @@ a {
 */
 /* Scrollbar container */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
     transition: .3s;
 }
 
-/* Scrollbar track */
+/* Scrollbar track
 ::-webkit-scrollbar-track {
     background:  #6d81e3; /* Color of the thumb when hovered */
-    /* darkseagreen; Color of the track */
+/* darkseagreen; Color of the track */
+
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    /* Fully transparent background for the track */
 }
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background: #555; /* Color of the thumb */
-    border-radius: 10px; /* Round corners of the thumb */
+    background: #555;
+    /* Color of the thumb */
+    border-radius: 10px;
+    /* Round corners of the thumb */
 }
 
 /* Scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background:  darkseagreen; /* Color of the thumb when hovered */
+    background: darkseagreen;
+    /* Color of the thumb when hovered */
 }
-
-
