@@ -17,6 +17,7 @@ import Github from '../components/img/github.png'
 import Headless from '../components/img/headless-ui.png'
 import Html from '../components/img/html.png'
 import Js from '../components/img/JavaScript.png'
+import Ts from '../components/img/typescript.svg'
 import Jquery from '../components/img/jQuery.png'
 import Json from '../components/img/JSON.png'
 import Matui from '../components/img/material-ui.png'
@@ -42,6 +43,7 @@ function Skills({isDarkMode}) {
         Bootstrap,
         Github,
         Js,
+        Ts,
         Python,
         Cpp,
         Npm,
