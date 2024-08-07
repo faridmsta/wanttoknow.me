@@ -7,7 +7,11 @@ import Technest from '../img/Technest.jpg'
 import Uni from '../img/uni.jpg'
 import Okmedia from '../img/okmedia.jpg'
 import Interview from '../img/intervi.jpg'
+<<<<<<< HEAD
 import Graduent from '../img/mezun1.jpg'
+=======
+import Graduent from './../img/mezun1.jpg'
+>>>>>>> 014b68d15b6ee35495b06ca29b413532cbada97e
 import AOS from "aos";
 import "aos/dist/aos.css";
 

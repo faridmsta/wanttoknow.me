@@ -11,10 +11,18 @@ import { Toaster } from 'react-hot-toast';
 import About from './components/about/About';
 
 function App() {
+<<<<<<< HEAD
   const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
   const [loading, setLoading] = useState(true)
 
 
+=======
+  const location = useLocation();
+  const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
+  const [loading, setLoading] = useState(true)
+
+  
+>>>>>>> 014b68d15b6ee35495b06ca29b413532cbada97e
 
   useEffect(() => {
     const handleMouseMove = (e) => {

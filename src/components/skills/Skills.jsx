@@ -8,7 +8,11 @@ import 'swiper/css/pagination';
 
 import { EffectCoverflow, Pagination,Autoplay, Navigation  } from 'swiper/modules';
 
+<<<<<<< HEAD
 import Ajax from '../img/AJAX.png'
+=======
+import Ajax from './../img/AJAX.png'
+>>>>>>> 014b68d15b6ee35495b06ca29b413532cbada97e
 import Ant from '../img/ant-design.png'
 import Bootstrap from '../img/bootstrap.webp'
 import Css from '../img/css.png'

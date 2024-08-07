@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import { NavLink } from 'react-router-dom'
 import Logo from '../img/Logo.png'
+=======
+import { Link, NavLink } from 'react-router-dom'
+import Logo from './../img/Logo.png'
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
+>>>>>>> 014b68d15b6ee35495b06ca29b413532cbada97e
 import './Header.css'
 
 function Header({ isDarkMode, toggleDarkMode }) {
