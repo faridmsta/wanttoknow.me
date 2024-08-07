@@ -1,4 +1,3 @@
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
@@ -8,7 +7,6 @@ import Skills from './components/skills/Skills';
 import Path from './components/path/Path';
 import Loading from './components/loading/Loading';
 import { Toaster } from 'react-hot-toast';
-import About from './components/about/About';
 
 function App() {
 
