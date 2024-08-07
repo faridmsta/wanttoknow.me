@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import Msjhuman from './img/Typing-rafiki.svg'
+import Msjhuman from '../img/Typing-rafiki.svg'
 import toast from 'react-hot-toast';
-import handwave from './img/waveinghand.png'
+import handwave from '../img/waveinghand.png'
 
 
 function Contact() {

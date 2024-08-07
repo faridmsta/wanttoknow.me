@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import Letsconnect from './Letsconnect';
-import { Link } from 'react-router-dom'
+import Letsconnect from '../../components/connect/Letsconnect';
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import '../components/Home.css'
-import Meg from '../components/img/megradient.png'
-import Click from '../components/sound/click.mp3'
+import './Home.css'
+import Meg from './../../components/img/megradient.png'
+import Click from './../../components/sound/click.mp3'
 
-import Pdf from "./res/faridmustafayevresume.pdf";
-import thingface from './img/thinkingface.png'
+import Pdf from "./../../components/res/faridmustafayevresume.pdf";
+import thingface from './../../components/img/thinkingface.png'
 
 function Home({ isDarkMode, toggleDarkMode }) {
 

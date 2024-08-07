@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
-import work from './img/work.svg'
-import laptop from './img/webpc.png'
+import laptop from './../img/webpc.png'
 function About() {
     return (
         <div>
