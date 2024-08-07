@@ -7,16 +7,14 @@ import Skills from './components/skills/Skills';
 import Path from './components/path/Path';
 import Loading from './components/loading/Loading';
 import { Toaster } from 'react-hot-toast';
+import Bentogrid from './components/bentogrid/Bentogrid';
+
+
 
 function App() {
 
   const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
   const [loading, setLoading] = useState(true)
-
-
-
-
-  
 
 
   useEffect(() => {
@@ -52,6 +50,7 @@ function App() {
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Path />
+        <Bentogrid/>
         <Skills isDarkMode={isDarkMode} />
         <Contact />
 

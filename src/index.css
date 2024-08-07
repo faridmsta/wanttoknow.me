@@ -12,6 +12,7 @@ html {
 }
 
 #root {
+    --font: "Rubik", sans-serif;
     overflow-x: hidden;
 }
 
