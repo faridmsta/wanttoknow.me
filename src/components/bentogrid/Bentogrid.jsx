@@ -15,6 +15,8 @@ import calc from './img/calculator.png'
 import calendar from './img/calendar.png'
 import './Bentogrid.css'
 import { FaGithub } from "react-icons/fa";
+import toast from 'react-hot-toast';
+
 
 
 const projList = [
@@ -36,7 +38,7 @@ const projList = [
     img: array,
     title: 'Array',
     githublink: 'https://github.com/faridmsta/Array.az',
-    projelink: 'arra',
+    projelink: '',
 
   },
   {
@@ -143,38 +145,46 @@ function Bentogrid() {
             <div className="bentogrid">
               {
                 projList
-                  .map((item, index) => (
-                    <div className={`bento${index + 1} bentobox`}>
-                      <div className="card">
-                        <a href={item.projelink}>
-                          <div className="image">
-                            <img src={item.img} alt="" />
-                          </div>
-                          <div className="content">
-                            <div className="text">
-                              <h2>{item.title}</h2>
+                  .map((item, index) => {
+                    return (
+                      <div className={`bento${index + 1} bentobox`}>
+                        <div className="card">
+                          <a onClick={(e) => {
+                            if (!item.projelink) {
+                              e.preventDefault(); // Prevent the default anchor behavior
+                              toast.error('Site has no address yet');
+                            }
+                          }}
+                            href={item.projelink || "#"} >
+                            <div className="image">
+                              <img src={item.img} alt="" />
                             </div>
-                            <div className="btns">
-                              <a href={item.githublink}>
-                                <div className="navProj">
-                                  <FaGithub size={20} />
-                                </div>
-                              </a>
+                            <div className="content">
+                              <div className="text">
+                                <h2>{item.title}</h2>
+                              </div>
+                              <div className="btns">
+                                <a href={item.githublink}>
+                                  <div className="navProj">
+                                    <FaGithub size={20} />
+                                  </div>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                        </a>
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    )
+                  })
               }
-              
+
             </div>
           </div>
         </div>
       </div>
     )
-  }else if (screenWidth > 1200){
-    return(
+  } else if (screenWidth > 1200) {
+    return (
       <div className='bentogripAll1200'>
         <div className="container">
           <div className="bentogripAllWrap">
@@ -182,38 +192,46 @@ function Bentogrid() {
             <div className="bentogrid">
               {
                 projList
-                  .map((item, index) => (
-                    <div className={`bento${index + 1} bentobox`}>
-                      <div className="card">
-                        <a href={item.projelink}>
-                          <div className="image">
-                            <img src={item.img} alt="" />
-                          </div>
-                          <div className="content">
-                            <div className="text">
-                              <h2>{item.title}</h2>
+                  .map((item, index) => {
+                    return (
+                      <div className={`bento${index + 1} bentobox`}>
+                        <div className="card">
+                          <a onClick={(e) => {
+                            if (!item.projelink) {
+                              e.preventDefault(); // Prevent the default anchor behavior
+                              toast.error('Site has no address yet');
+                            }
+                          }}
+                            href={item.projelink || "#"} >
+                            <div className="image">
+                              <img src={item.img} alt="" />
                             </div>
-                            <div className="btns">
-                              <a href={item.githublink}>
-                                <div className="navProj">
-                                  <FaGithub size={20} />
-                                </div>
-                              </a>
+                            <div className="content">
+                              <div className="text">
+                                <h2>{item.title}</h2>
+                              </div>
+                              <div className="btns">
+                                <a href={item.githublink}>
+                                  <div className="navProj">
+                                    <FaGithub size={20} />
+                                  </div>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                        </a>
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    )
+                  })
               }
-              
+
             </div>
           </div>
         </div>
       </div>
     )
-  }else if (screenWidth > 700){
-    return(
+  } else if (screenWidth > 700) {
+    return (
       <div className='bentogripAll1000'>
         <div className="container">
           <div className="bentogripAllWrap">
@@ -221,38 +239,46 @@ function Bentogrid() {
             <div className="bentogrid">
               {
                 projList
-                  .map((item, index) => (
-                    <div className={`bento${index + 1} bentobox`}>
-                      <div className="card">
-                        <a href={item.projelink}>
-                          <div className="image">
-                            <img src={item.img} alt="" />
-                          </div>
-                          <div className="content">
-                            <div className="text">
-                              <h2>{item.title}</h2>
+                  .map((item, index) => {
+                    return (
+                      <div className={`bento${index + 1} bentobox`}>
+                        <div className="card">
+                          <a onClick={(e) => {
+                            if (!item.projelink) {
+                              e.preventDefault(); // Prevent the default anchor behavior
+                              toast.error('Site has no address yet');
+                            }
+                          }}
+                            href={item.projelink || "#"} >
+                            <div className="image">
+                              <img src={item.img} alt="" />
                             </div>
-                            <div className="btns">
-                              <a href={item.githublink}>
-                                <div className="navProj">
-                                  <FaGithub size={20} />
-                                </div>
-                              </a>
+                            <div className="content">
+                              <div className="text">
+                                <h2>{item.title}</h2>
+                              </div>
+                              <div className="btns">
+                                <a href={item.githublink}>
+                                  <div className="navProj">
+                                    <FaGithub size={20} />
+                                  </div>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                        </a>
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    )
+                  })
               }
-              
+
             </div>
           </div>
         </div>
       </div>
     )
-  }else{
-    return(
+  } else {
+    return (
       <div className='bentogripAll700'>
         <div className="container">
           <div className="bentogripAllWrap">
@@ -260,31 +286,39 @@ function Bentogrid() {
             <div className="bentogrid">
               {
                 projList
-                  .map((item, index) => (
-                    <div className={`bento${index + 1} bentobox`}>
-                      <div className="card">
-                        <a href={item.projelink}>
-                          <div className="image">
-                            <img src={item.img} alt="" />
-                          </div>
-                          <div className="content">
-                            <div className="text">
-                              <h2>{item.title}</h2>
+                  .map((item, index) => {
+                    return (
+                      <div className={`bento${index + 1} bentobox`}>
+                        <div className="card">
+                          <a onClick={(e) => {
+                            if (!item.projelink) {
+                              e.preventDefault(); // Prevent the default anchor behavior
+                              toast.error('Site has no address yet');
+                            }
+                          }}
+                            href={item.projelink || "#"} >
+                            <div className="image">
+                              <img src={item.img} alt="" />
                             </div>
-                            <div className="btns">
-                              <a href={item.githublink}>
-                                <div className="navProj">
-                                  <FaGithub size={20} />
-                                </div>
-                              </a>
+                            <div className="content">
+                              <div className="text">
+                                <h2>{item.title}</h2>
+                              </div>
+                              <div className="btns">
+                                <a href={item.githublink}>
+                                  <div className="navProj">
+                                    <FaGithub size={20} />
+                                  </div>
+                                </a>
+                              </div>
                             </div>
-                          </div>
-                        </a>
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    )
+                  })
               }
-              
+
             </div>
           </div>
         </div>
