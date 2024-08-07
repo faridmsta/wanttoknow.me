@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Letsconnect from '../../components/connect/Letsconnect';
-<<<<<<< HEAD
-=======
-import { Link } from 'react-router-dom'
->>>>>>> 014b68d15b6ee35495b06ca29b413532cbada97e
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
