@@ -212,9 +212,48 @@ function Bentogrid() {
         </div>
       </div>
     )
-  }else{
+  }else if (screenWidth > 700){
     return(
       <div className='bentogripAll1000'>
+        <div className="container">
+          <div className="bentogripAllWrap">
+            <h2>Projects</h2>
+            <div className="bentogrid">
+              {
+                projList
+                  .map((item, index) => (
+                    <div className={`bento${index + 1} bentobox`}>
+                      <div className="card">
+                        <a href={item.projelink}>
+                          <div className="image">
+                            <img src={item.img} alt="" />
+                          </div>
+                          <div className="content">
+                            <div className="text">
+                              <h2>{item.title}</h2>
+                            </div>
+                            <div className="btns">
+                              <a href={item.githublink}>
+                                <div className="navProj">
+                                  <FaGithub size={20} />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  ))
+              }
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }else{
+    return(
+      <div className='bentogripAll700'>
         <div className="container">
           <div className="bentogripAllWrap">
             <h2>Projects</h2>
