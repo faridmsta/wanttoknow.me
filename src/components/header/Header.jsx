@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../components/img/Logo.png'
+import Logo from './../img/Logo.png'
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
-import '../components/Header.css'
+import './Header.css'
 
 function Header({ isDarkMode, toggleDarkMode }) {
     const [menu, setMenu] = useState(false)

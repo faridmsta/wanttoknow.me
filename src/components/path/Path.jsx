@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import './Path.css'
-import Alplogo from '../components/img/alplogo.jpg'
-import Brain from '../components/img/brain.jpg';
-import Python from '../components/img/python.png'
-import Technest from '../components/img/Technest.jpg'
-import Uni from '../components/img/uni.jpg'
-import Okmedia from '../components/img/okmedia.jpg'
-import Interview from '../components/img/intervi.jpg'
-import Graduent from './img/mezun1.jpg'
+import Alplogo from '../img/alplogo.jpg'
+import Brain from '../img/brain.jpg';
+import Python from '../img/python.png'
+import Technest from '../img/Technest.jpg'
+import Uni from '../img/uni.jpg'
+import Okmedia from '../img/okmedia.jpg'
+import Interview from '../img/intervi.jpg'
+import Graduent from './../img/mezun1.jpg'
 import AOS from "aos";
 import "aos/dist/aos.css";
 

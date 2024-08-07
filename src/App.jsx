@@ -1,29 +1,21 @@
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import Permision from './components/Permision';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Skills from './components/Skills';
-import Path from './components/Path';
-import Loading from './components/Loading';
+import Header from './components/header/Header';
+import Home from './pages/home/Home';
+import Contact from './components/contact/Contact';
+import Skills from './components/skills/Skills';
+import Path from './components/path/Path';
+import Loading from './components/loading/Loading';
 import { Toaster } from 'react-hot-toast';
-import About from './components/About';
+import About from './components/about/About';
 
 function App() {
   const location = useLocation();
-  const [permision, setPermision] = useState(true);
   const [mousepos, setMousePos] = useState({ top: 0, left: 0 });
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      setPermision(false);
-    } else {
-      setPermision(true);
-    }
-  }, [location]);
+  
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -53,7 +45,6 @@ function App() {
         <div className="cursor"
           style={mousepos}
         ><div className="dot" /></div>
-        {/* {permision && <Header />} */}
 
         <Toaster toastOptions={{className: 'informer', }} />
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
