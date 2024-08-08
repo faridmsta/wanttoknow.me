@@ -107,8 +107,8 @@ const projList = [
   {
     img: boomerang,
     title: 'Vacansy Platform',
-    githublink: 'https://github.com/faridmsta/Starbucks',
-    projelink: 'https://starbucks-dusky.vercel.app/',
+    githublink: '',
+    projelink: '',
 
   },
   {
@@ -164,7 +164,13 @@ function Bentogrid() {
                                 <h2>{item.title}</h2>
                               </div>
                               <div className="btns">
-                                <a href={item.githublink}>
+                                <a onClick={(e) => {
+                                  if (!item.githublink) {
+                                    e.preventDefault(); // Prevent the default anchor behavior
+                                    toast.error('Private Github Link');
+                                  }
+                                }}
+                                  href={item.githublink || "#"}>
                                   <div className="navProj">
                                     <FaGithub size={20} />
                                   </div>
@@ -211,7 +217,13 @@ function Bentogrid() {
                                 <h2>{item.title}</h2>
                               </div>
                               <div className="btns">
-                                <a href={item.githublink}>
+                                <a onClick={(e) => {
+                                  if (!item.githublink) {
+                                    e.preventDefault(); // Prevent the default anchor behavior
+                                    toast.error('Private Github Link');
+                                  }
+                                }}
+                                  href={item.githublink || "#"}>
                                   <div className="navProj">
                                     <FaGithub size={20} />
                                   </div>
@@ -258,7 +270,13 @@ function Bentogrid() {
                                 <h2>{item.title}</h2>
                               </div>
                               <div className="btns">
-                                <a href={item.githublink}>
+                                <a onClick={(e) => {
+                                  if (!item.githublink) {
+                                    e.preventDefault(); // Prevent the default anchor behavior
+                                    toast.error('Private Github Link');
+                                  }
+                                }}
+                                  href={item.githublink || "#"}>
                                   <div className="navProj">
                                     <FaGithub size={20} />
                                   </div>
@@ -305,7 +323,13 @@ function Bentogrid() {
                                 <h2>{item.title}</h2>
                               </div>
                               <div className="btns">
-                                <a href={item.githublink}>
+                                <a onClick={(e) => {
+                                  if (!item.githublink) {
+                                    e.preventDefault(); // Prevent the default anchor behavior
+                                    toast.error('Private Github Link');
+                                  }
+                                }}
+                                  href={item.githublink || "#"}>
                                   <div className="navProj">
                                     <FaGithub size={20} />
                                   </div>

@@ -31,7 +31,7 @@
             }
 
             & .image {
-                height: 380px;
+                height: 100%;
                 width: 100%;
                 box-sizing: border-box;
                 overflow: hidden;
@@ -40,6 +40,7 @@
                 border: 12px solid var(--secondary);
                 border-radius: 16px;
                 background-color: var(--secondary);
+            
                 & img {
 
                     border-radius: 4px;
@@ -53,6 +54,8 @@
             }
 
         }
+
+       
         
 
 
