@@ -30,8 +30,8 @@ const projList = [
   {
     img: gia,
     title: 'GIA',
-    githublink: 'https://github.com/faridmsta/CreatewithAI',
-    projelink: 'https://createwith-ai.vercel.app/',
+    githublink: '',
+    projelink: '',
 
   },
   {

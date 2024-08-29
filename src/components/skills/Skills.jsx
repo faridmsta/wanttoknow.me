@@ -31,6 +31,7 @@ import Vite from '../img/vite.png'
 import Spline from '../img/spline.png'
 import Scss from "./../img/scss.png"
 import Cpp from "./../img/cpp.png"
+import Redux from "./../img/redux-logo-vector.svg"
 
 function Skills({isDarkMode}) {
 
@@ -56,6 +57,7 @@ function Skills({isDarkMode}) {
         Reactlogo,
         Vite,
         Router,
+        Redux,
         Responsive,
         Tailwind,
         Matui,
