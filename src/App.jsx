@@ -45,7 +45,7 @@ function App() {
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path='/' element={<Allhome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />}/>
-          <Route path='err' element={<Err />}/>
+          <Route path='/err' element={<Err />}/>
         </ Routes>
 
 
