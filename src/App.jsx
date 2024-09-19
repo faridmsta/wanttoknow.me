@@ -44,8 +44,8 @@ function App() {
         <Toaster toastOptions={{ className: 'informer', }} />
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
-          <Route path='/err' element={<Allhome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />}/>
-          <Route path='/' element={<Err />}/>
+          <Route path='/' element={<Allhome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />}/>
+          <Route path='/*' element={<Err />}/>
         </ Routes>
       </div>
     );
