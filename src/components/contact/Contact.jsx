@@ -39,6 +39,7 @@ function Contact() {
     if (res.success) {
       toast.success("Successfully sented")
     }
+
   };
 
 

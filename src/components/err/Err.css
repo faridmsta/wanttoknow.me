@@ -1,0 +1,11 @@
+.errpage{
+    background: var(--background);
+    font-size: 5rem;
+    font-family: var(--font);
+    & .errpageWrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
