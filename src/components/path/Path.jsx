@@ -8,6 +8,8 @@ import Uni from '../img/uni.jpg'
 import Okmedia from '../img/okmedia.jpg'
 import Interview from '../img/intervi.jpg'
 import Graduent from '../img/mezun1.jpg'
+import hackaton1 from '../img/hackaton1.jpg'
+import timegif from '../img/giphy.gif'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -86,9 +88,9 @@ function Path() {
                                     </div>
                                     <div className="stContent">
                                         <h2>Call for an interview <br/> 2023</h2>
-                                        <p>I told about my life story in the Interview that I was called for my achievements and it was great.
+                                        <p>I told about my life story in the Interview that I was called for my achievements and it was great
                                             <br />
-                                            <a href="https://www.instagram.com/p/C03GUqoNXkE/" target="_blank" rel="noopener noreferrer">Click to watch.</a></p>
+                                            <a href="https://www.instagram.com/p/C03GUqoNXkE/" target="_blank" rel="noopener noreferrer">Click to watch</a></p>
                                     </div>
                                 </div>
 
@@ -108,6 +110,24 @@ function Path() {
                                     <div className="stContent">
                                         <h2>Graduation from Div Academy<br/> 2024</h2>
                                         <p>After a lot of sleepless nights and hard work I finally graduated from Div Academy</p>
+                                    </div>
+                                </div>
+                                <div className="stPart " data-aos="fade-right">
+                                    <div className="image">
+                                        <img src={hackaton1} alt="" />
+                                    </div>
+                                    <div className="stContent">
+                                        <h2>First win at First Hackaton<br/> 2024</h2>
+                                        <p>Just in 24hours we managed to develop EcoLink App and got the First place</p>
+                                    </div>
+                                </div>
+                                <div className="stPart " data-aos="fade-right">
+                                    <div className="image">
+                                        <img src={timegif} alt="" />
+                                    </div>
+                                    <div className="stContent">
+                                        <h2>Coming Soon<br/> </h2>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>

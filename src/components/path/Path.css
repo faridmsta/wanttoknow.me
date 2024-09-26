@@ -31,14 +31,15 @@
             }
 
             & .image {
+                transition: .3s;
                 height: 100%;
                 width: 100%;
                 box-sizing: border-box;
                 overflow: hidden;
                 display: flex;
                 align-items: center;
-                border: 12px solid var(--secondary);
-                border-radius: 16px;
+                border: 0px solid var(--background);
+                border-radius: 10px;
                 background-color: var(--secondary);
             
                 & img {
@@ -61,7 +62,7 @@
 
         & .stPart:hover {
             & .image {
-
+                border: 12px solid var(--secondary);
 
                 & img {
                     filter: grayscale(0);
