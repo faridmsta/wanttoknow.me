@@ -1,11 +1,11 @@
-.informer{
+.informer {
 
     font-family: "Rubik", sans-serif;
 
 }
 
 
-.cursor{
+.cursor {
 
     position: fixed;
     z-index: 10;
@@ -20,14 +20,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width:768px){
-        display: none!important;
+
+    @media screen and (max-width:768px) {
+        display: none !important;
     }
-    & .dot{
+
+    & .dot {
         width: 6px;
         height: 6px;
         border-radius: 50%;
         background: var(--accent);
     }
-    
+
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
 }
