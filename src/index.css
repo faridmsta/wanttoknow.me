@@ -16,14 +16,9 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    cursor: none;
+body {cursor: none;}
 
-}
-
-a {
-    cursor: none;
-}
+a {cursor: none;}
 
 .container {
     width: 90%;
@@ -39,12 +34,9 @@ a {
     --sctext: #6d81e3;
     --accent: #0b2eda;
     --scbackground: #fcfbff;
-
-
 }
 
 .dark-mode {
-
     --text: #efeff0;
     --background: #121212;
     --primary: #9aa5da;
@@ -52,8 +44,6 @@ a {
     --sctext: #6d81e3;
     --accent: #2547f4;
     --scbackground: #1d1d1d;
-
-
 }
 
 /* 
@@ -78,12 +68,11 @@ a {
 --secondary: #91bade;
 --accent: #4db9ef;
 
- 
-
-
 */
+
 /* Scrollbar container */
 ::-webkit-scrollbar {
+    display: none;
     width: 12px;
     transition: .3s;
 }
