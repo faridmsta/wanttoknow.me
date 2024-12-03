@@ -84,6 +84,7 @@ a {
 */
 /* Scrollbar container */
 ::-webkit-scrollbar {
+    display: none;
     width: 12px;
     /* Width of the scrollbar */
     transition: .3s;
@@ -96,12 +97,14 @@ a {
 
 
 ::-webkit-scrollbar-track {
+    display: none;
     background: rgba(0, 0, 0, 0);
     /* Fully transparent background for the track */
 }
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
+    display: none;
     background: #555;
     /* Color of the thumb */
     border-radius: 10px;

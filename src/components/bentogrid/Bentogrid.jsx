@@ -3,7 +3,6 @@ import starbucks from './img/starbucks.png'
 import rps from './img/rps.png'
 import adminPanel from './img/adminpanel.png'
 import gia from './img/gia.png'
-import array from './img/arrayaz.png'
 import edustage from './img/edustage.png'
 import nsc from './img/nsc.png'
 import turboaz from './img/turboaz.png'
@@ -13,6 +12,7 @@ import boomerang from './img/boomerang.png'
 import bloggme from './img/bloggy-me.png'
 import calc from './img/calculator.png'
 import calendar from './img/calendar.png'
+import aeroclima from './img/aeroclimaaz.png'
 import './Bentogrid.css'
 import { FaGithub } from "react-icons/fa";
 import toast from 'react-hot-toast';
@@ -35,17 +35,17 @@ const projList = [
 
   },
   {
-    img: array,
-    title: 'Array',
-    githublink: 'https://github.com/faridmsta/Array.az',
-    projelink: '',
+    img: fakeUnec,
+    title: 'Remake UNI Site',
+    githublink: 'https://github.com/faridmsta/Site-for-University',
+    projelink: 'https://site-for-university.vercel.app/',
 
   },
   {
-    img: fakeUnec,
-    title: 'Remake UNEC',
-    githublink: 'https://github.com/faridmsta/Site-for-University',
-    projelink: 'https://site-for-university.vercel.app/',
+    img:  aeroclima,
+    title: 'Aeroclima.az',
+    githublink: '',
+    projelink: 'https://aeroclima.az/',
 
   },
   {
