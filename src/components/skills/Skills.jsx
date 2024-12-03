@@ -96,7 +96,7 @@ function Skills({isDarkMode}) {
 
                             return (
                                 <SwiperSlide key={index}  className="logoWrap">
-                                    <img src={item} style={{filter: (isDarkMode && index==4)&& 'invert(1)' }} alt={`Item ${index}`} />
+                                    <img loading='lazy' src={item} style={{filter: (isDarkMode && index==4)&& 'invert(1)' }} alt={`Item ${index}`} />
                                 </SwiperSlide>
                             )
                         })}
