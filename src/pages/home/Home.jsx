@@ -6,15 +6,14 @@ import 'aos/dist/aos.css'
 import './Home.css'
 import Meg from './../../components/img/megradient.png'
 import Click from './../../components/sound/click.mp3'
-
 import Pdf from "./../../components/res/faridmustafayevresume.pdf";
-import thingface from './../../components/img/thinkingface.png'
+import Path from '../../components/path/Path';
+import Bentogrid from '../../components/bentogrid/Bentogrid';
+import Skills from '../../components/skills/Skills';
+import Contact from '../../components/contact/Contact';
+
 
 function Home({ isDarkMode, toggleDarkMode }) {
-
-  const [notifyup, setNotifyup] = useState(false)
-  const [ncontent, setNcontent] = useState('I thing it\'s not working.')
-  const [nemojy, setNemojy] = useState(thingface)
 
 
   useEffect(() => {
@@ -64,7 +63,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
                   <p>
                     Computer Engineering student and Frontend Developer.
                   </p>
-                  
+
                 </div>
               </div>
 
@@ -82,9 +81,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
           </div>
         </div>
       </section>
-      
-    <Letsconnect isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}  />
-
+      <Letsconnect isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <section id='cv' className="dwCV">
         <div className="container">
           <div className="dwCVWrap">
@@ -101,11 +98,10 @@ function Home({ isDarkMode, toggleDarkMode }) {
           </div>
         </div>
       </section>
-      <div className={`notifybar ${notifyup} `}>
-
-        <img src={nemojy} alt="" />
-        <p>{ncontent}</p>
-      </div>
+      <Path/>
+      <Bentogrid/>
+      <Skills isDarkMode={isDarkMode} />
+      <Contact/>
     </main>
 
   )

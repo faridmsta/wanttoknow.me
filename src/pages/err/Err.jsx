@@ -1,7 +1,6 @@
 import React from 'react'
 import './Err.css'
-import Confuzman from '../img/Questions-cuate.svg'
-import errfarid from '../img/errfarid.png'
+import errfarid from '../../components/img/errfarid.png'
 function Err() {
   return (
     <div className='errpage' >
